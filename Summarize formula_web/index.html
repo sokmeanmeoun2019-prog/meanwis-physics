@@ -167,6 +167,34 @@
         </section>
     </main>
 
+    <!-- AI Tutor Widget -->
+    <div id="ai-widget-container" class="ai-widget-collapsed">
+        <button id="ai-toggle-btn" class="ai-fab">
+            <i class="fa-solid fa-robot"></i>
+        </button>
+        <div id="ai-chat-panel" class="ai-panel">
+            <div class="ai-header">
+                <h3><i class="fa-solid fa-wand-magic-sparkles"></i> AI Tutor</h3>
+                <button id="ai-close-btn" class="btn-icon"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div id="ai-messages" class="ai-messages">
+                <div class="ai-msg ai">Hi there! I'm your AI Physics Tutor. Ask me any physics question or ask me to explain a concept from this lesson!</div>
+            </div>
+            
+            <div id="ai-api-key-setup" class="ai-api-key-setup">
+                <p style="font-size: 0.9rem; margin-bottom: 10px;">Please enter your Gemini API key to chat. It is stored locally in your browser.</p>
+                <input type="password" id="ai-api-key-input" placeholder="Paste Gemini API Key here..." style="width:100%; padding: 8px; margin-bottom: 10px; border: 1px solid #ddd; border-radius: 4px;">
+                <button id="ai-save-key-btn" class="btn-primary" style="width: 100%;">Save Key</button>
+                <p style="font-size: 0.8rem; margin-top: 10px; text-align: center;"><a href="https://aistudio.google.com/app/apikey" target="_blank">Get an API key</a></p>
+            </div>
+
+            <div class="ai-input-area" id="ai-input-area" style="display: none;">
+                <input type="text" id="ai-user-input" placeholder="Ask about physics..." autocomplete="off">
+                <button id="ai-send-btn" class="btn-icon"><i class="fa-solid fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
     <script src="app.js"></script>
 </body>
 </html>

@@ -1,34 +1,39 @@
 // --- Data Structure ---
 const data = {
 "9": [
-{id:"g9-l1",gifUrl:"https://commons.wikimedia.org/wiki/Special:FilePath/Torque_animation.gif",title:"Chapter 1: Turning Effect of Force",concepts:["Resultant Force: Calculated depending on the direction of the acting forces.","Resolving Force: A force can be broken down into horizontal and vertical components.","Moment of a force: The turning effect produced by a force.","Principle of moment: For equilibrium, Anti-clockwise moment = Clockwise moment \\( M_{ACW} = M_{CW} \\)."],definitions:[],examples:[],
+{id:"g9-l1",gifUrl:"https://commons.wikimedia.org/wiki/Special:FilePath/Torque_animation.gif",title:"Chapter 1: Turning Effect of Force",concepts:["Resultant Force: Calculated depending on the direction of the acting forces.","Trigonometry Basics: Using right triangles to relate angles to side lengths (sine, cosine, tangent).","Resolving Force: A force can be broken down into horizontal and vertical components.","Moment of a force: The turning effect produced by a force.","Principle of moment: For equilibrium, Anti-clockwise moment = Clockwise moment \\( M_{ACW} = M_{CW} \\)."],definitions:[],examples:[],
 equations:[
 {section:"Resultant Force",name:"Resultant: Opposite direction",formula:"\\( R = |a - b| \\)",symbols:[{symbol:"R",desc:"Resultant Force (N)"},{symbol:"a, b",desc:"Component Forces (N)"}]},
 {section:"Resultant Force",name:"Resultant: Same direction",formula:"\\( R = a + b \\)",symbols:[{symbol:"R",desc:"Resultant Force (N)"},{symbol:"a, b",desc:"Component Forces (N)"}]},
-{section:"Resultant Force",name:"Resultant: At 90° angle",formula:"\\( R = \\sqrt{a^2 + b^2} \\)",symbols:[{symbol:"R",desc:"Resultant Force (N)"},{symbol:"a, b",desc:"Component Forces (N)"}]},
-{section:"Resultant Force",name:"Resultant: At angle α",formula:"\\( R = \\sqrt{a^2 + b^2 + 2ab \\cos \\alpha} \\)",symbols:[{symbol:"R",desc:"Resultant Force (N)"},{symbol:"a, b",desc:"Component Forces (N)"},{symbol:"α",desc:"Angle between forces (° or rad)"}]},
-{section:"Resolving Force",name:"Horizontal Force",formula:"\\( F_x = F \\cos \\theta \\)",symbols:[{symbol:"F_x",desc:"Horizontal Force (N)"},{symbol:"F",desc:"Applied Force (N)"},{symbol:"θ",desc:"Angle (° or rad)"}]},
-{section:"Resolving Force",name:"Vertical Force",formula:"\\( F_y = F \\sin \\theta \\)",symbols:[{symbol:"F_y",desc:"Vertical Force (N)"},{symbol:"F",desc:"Applied Force (N)"},{symbol:"θ",desc:"Angle (° or rad)"}]},
+{section:"Resultant Force (Perpendicular)",name:"Resultant: At 90° angle",formula:"\\( R = \\sqrt{a^2 + b^2} \\)",symbols:[{symbol:"R",desc:"Resultant Force (N)"},{symbol:"a, b",desc:"Component Forces (N)"}]},
+{section:"Resultant Force (At angle θ)",name:"Parallelogram Law of Forces",formula:"\\( R = \\sqrt{a^2 + b^2 + 2ab \\cos \\theta} \\)",symbols:[{symbol:"R",desc:"Resultant Force (N)"},{symbol:"a, b",desc:"Component Forces (N)"},{symbol:"θ",desc:"Angle between forces (° or rad)"}]},
+{section:"Trigonometry Basics (Right Triangle)",name:"Sine (\\(\\sin\\))",formula:"\\( \\sin \\theta = \\frac{\\text{opposite}}{\\text{hypotenuse}} = \\frac{b}{R} \\)",symbols:[{symbol:"b",desc:"Opposite Side (N)"},{symbol:"R",desc:"Hypotenuse (N)"}]},
+{section:"Trigonometry Basics (Right Triangle)",name:"Cosine (\\(\\cos\\))",formula:"\\( \\cos \\theta = \\frac{\\text{adjacent}}{\\text{hypotenuse}} = \\frac{a}{R} \\)",symbols:[{symbol:"a",desc:"Adjacent Side (N)"},{symbol:"R",desc:"Hypotenuse (N)"}]},
+{section:"Trigonometry Basics (Right Triangle)",name:"Tangent (\\(\\tan\\))",formula:"\\( \\tan \\theta = \\frac{\\text{opposite}}{\\text{adjacent}} = \\frac{b}{a} \\)",symbols:[{symbol:"b",desc:"Opposite Side (N)"},{symbol:"a",desc:"Adjacent Side (N)"}]},
+{section:"Resolving Force (Angle with horizontal axis)",name:"Horizontal Force",formula:"\\( F_x = F \\cos \\theta \\)",symbols:[{symbol:"F_x",desc:"Horizontal Force (N)"},{symbol:"F",desc:"Applied Force (N)"},{symbol:"θ",desc:"Angle (° or rad)"}]},
+{section:"Resolving Force (Angle with horizontal axis)",name:"Vertical Force",formula:"\\( F_y = F \\sin \\theta \\)",symbols:[{symbol:"F_y",desc:"Vertical Force (N)"},{symbol:"F",desc:"Applied Force (N)"},{symbol:"θ",desc:"Angle (° or rad)"}]},
+{section:"Resolving Force (Angle with vertical axis)",name:"Horizontal Force",formula:"\\( F_x = F \\sin \\theta \\)",symbols:[{symbol:"F_x",desc:"Horizontal Force (N)"},{symbol:"F",desc:"Applied Force (N)"},{symbol:"θ",desc:"Angle (° or rad)"}]},
+{section:"Resolving Force (Angle with vertical axis)",name:"Vertical Force",formula:"\\( F_y = F \\cos \\theta \\)",symbols:[{symbol:"F_y",desc:"Vertical Force (N)"},{symbol:"F",desc:"Applied Force (N)"},{symbol:"θ",desc:"Angle (° or rad)"}]},
 {section:"Direction",name:"Direction of a resultant force",formula:"\\( \\theta = \\tan^{-1}\\left(\\frac{\\text{opp}}{\\text{adj}}\\right) = \\tan^{-1}\\left(\\frac{b}{a}\\right) \\)",symbols:[{symbol:"θ",desc:"Direction Angle (° or rad)"},{symbol:"b",desc:"Opposite Force (N)"},{symbol:"a",desc:"Adjacent Force (N)"}]},
 {section:"Moment",name:"Moment of a force",formula:"\\( M = F \\times d_{\\perp} \\)",symbols:[{symbol:"M",desc:"Moment of Force (N·m)"},{symbol:"F",desc:"Applied Force (N)"},{symbol:"d_⊥",desc:"Perpendicular distance (m)"}]},
 {section:"Moment",name:"Two parallel forces",formula:"\\( F_1 d_1 = F_2 d_2 \\Rightarrow \\frac{F_1}{F_2} = \\frac{d_2}{d_1} \\)",symbols:[{symbol:"F_1, F_2",desc:"Parallel Forces (N)"},{symbol:"d_1, d_2",desc:"Distances from pivot (m)"}]},
 {section:"Moment",name:"Principle of moment",formula:"\\( M_{ACW} = M_{CW} \\)",symbols:[{symbol:"M_{ACW}",desc:"Anti-Clockwise Moment (N·m)"},{symbol:"M_{CW}",desc:"Clockwise Moment (N·m)"}]},
 {section:"Moment",name:"Net moment",formula:"\\( M_{net} = M_{ACW} - M_{CW} \\)",symbols:[{symbol:"M_{net}",desc:"Net Moment (N·m)"}]},
-{section:"Moment",name:"Force Components",formula:"\\( F_A = \\frac{F \\times OB}{AB} \\), \\( F_B = \\frac{F \\times OA}{AB} \\)",symbols:[{symbol:"F_A, F_B",desc:"Reaction Forces (N)"},{symbol:"F",desc:"Applied Force (N)"},{symbol:"OA, OB, AB",desc:"Distances along beam (m)"}]}
+{section:"Moment (Force Components)",name:"Force Components",formula:"\\( F_A = \\frac{F \\times OB}{AB} \\), \\( F_B = \\frac{F \\times OA}{AB} \\)",symbols:[{symbol:"F_A, F_B",desc:"Reaction Forces (N)"},{symbol:"F",desc:"Applied Force (N)"},{symbol:"OA, OB, AB",desc:"Distances along beam (m)"}]}
 ],flashcards:[
 {front:"How do you calculate the resultant of two forces acting in opposite directions?", back:"\\( R = |a - b| \\)"},
 {front:"How do you calculate the resultant of two forces acting in the same direction?", back:"\\( R = a + b \\)"},
 {front:"What is the formula for the resultant of two forces acting at a 90° angle?", back:"\\( R = \\sqrt{a^2 + b^2} \\)"},
 {front:"What is the general formula for the resultant of two forces acting at an angle \\(\\alpha\\)?", back:"\\( R = \\sqrt{a^2 + b^2 + 2ab \\cos \\alpha} \\)"},
-{front:"How do you find the horizontal component of a force?", back:"\\( F_x = F \\cos \\theta \\)"},
-{front:"How do you find the vertical component of a force?", back:"\\( F_y = F \\sin \\theta \\)"},
+{front:"How do you find the horizontal component of a force (when \\(\\theta\\) is with horizontal axis)?", back:"\\( F_x = F \\cos \\theta \\)"},
+{front:"How do you find the vertical component of a force (when \\(\\theta\\) is with horizontal axis)?", back:"\\( F_y = F \\sin \\theta \\)"},
 {front:"What is the formula for finding the direction (angle) of a resultant force?", back:"\\( \\theta = \\tan^{-1}\\left(\\frac{b}{a}\\right) \\)"},
 {front:"What is the definition of the moment of a force?", back:"\\( M = F \\times d_{\\perp} \\)"},
 {front:"What is the principle of moments for an object in equilibrium?", back:"Anti-clockwise moment = Clockwise moment \\( (M_{ACW} = M_{CW}) \\)"},
 {front:"How is the net moment calculated?", back:"\\( M_{net} = M_{ACW} - M_{CW} \\)"}
 ],quiz:[
-{question:"Which formula correctly represents the horizontal component of a force?", options:["\\( F_x = F \\sin \\theta \\)","\\( F_x = F \\cos \\theta \\)","\\( F_x = F \\tan \\theta \\)","\\( F_x = F / \\cos \\theta \\)"], correctIndex:1, feedback:"The horizontal component uses the cosine function, assuming \\(\\theta\\) is the angle with the horizontal."},
-{question:"Which formula correctly represents the vertical component of a force?", options:["\\( F_y = F \\sin \\theta \\)","\\( F_y = F \\cos \\theta \\)","\\( F_y = F \\tan \\theta \\)","\\( F_y = F / \\sin \\theta \\)"], correctIndex:0, feedback:"The vertical component uses the sine function, \\( F_y = F \\sin \\theta \\)."},
+{question:"Which formula correctly represents the horizontal component of a force (when \\(\\theta\\) is with the horizontal axis)?", options:["\\( F_x = F \\sin \\theta \\)","\\( F_x = F \\cos \\theta \\)","\\( F_x = F \\tan \\theta \\)","\\( F_x = F / \\cos \\theta \\)"], correctIndex:1, feedback:"The horizontal component uses the cosine function, assuming \\(\\theta\\) is the angle with the horizontal."},
+{question:"Which formula correctly represents the vertical component of a force (when \\(\\theta\\) is with the horizontal axis)?", options:["\\( F_y = F \\sin \\theta \\)","\\( F_y = F \\cos \\theta \\)","\\( F_y = F \\tan \\theta \\)","\\( F_y = F / \\sin \\theta \\)"], correctIndex:0, feedback:"The vertical component uses the sine function, \\( F_y = F \\sin \\theta \\)."},
 {question:"When two parallel forces act on a beam in equilibrium, which relation is correct?", options:["\\( F_1 / d_1 = F_2 / d_2 \\)","\\( F_1 + d_1 = F_2 + d_2 \\)","\\( F_1 d_1 = F_2 d_2 \\)","\\( F_1 d_2 = F_2 d_1 \\)"], correctIndex:2, feedback:"According to the principle of moments, the force times its distance from the pivot is balanced: \\( F_1 d_1 = F_2 d_2 \\)."},
 {question:"If two forces 3N and 4N act at a 90° angle, what is the magnitude of the resultant force?", options:["1N","7N","5N","12N"], correctIndex:2, feedback:"Using Pythagoras' theorem: \\( R = \\sqrt{3^2 + 4^2} = \\sqrt{9 + 16} = 5 \\text{N} \\)."},
 {question:"If two forces 5N and 2N act in opposite directions, what is the resultant force?", options:["7N","3N","10N","2.5N"], correctIndex:1, feedback:"For opposite directions, subtract the smaller force from the larger one: \\( |5 - 2| = 3 \\text{N} \\)."},
@@ -81,13 +86,13 @@ equations:[
 {id:"g9-l3",gifUrl:"https://commons.wikimedia.org/wiki/Special:FilePath/Electric_circuit.gif",title:"Chapter 3: Electricity",concepts:[],definitions:[],examples:[],
 equations:[
 {section:"Electrical Power",name:"Definition of power",formula:"\\( P = \\frac{W}{t} = \\frac{E}{t} \\)",symbols:[{symbol:"P",desc:"Power (W)"},{symbol:"W",desc:"Work (J)"},{symbol:"E",desc:"Energy (J)"},{symbol:"t",desc:"Time (s)"}]},
-{section:"Electrical Power",name:"Power of current",formula:"\\( P = VI = RI^2 = \\frac{V^2}{R} \\)",symbols:[{symbol:"V",desc:"Voltage (V)"},{symbol:"I",desc:"Current (A)"},{symbol:"R",desc:"Resistance (Ω)"}]},
-{section:"Electrical Power",name:"Energy Transfer",formula:"\\( E = QV = VIt = RI^2 t = \\frac{V^2}{R} t \\)",symbols:[{symbol:"Q",desc:"Charge (C)"}]},
+{section:"Electrical Power",name:"Power of current",formula:"\\( P = VI = RI^2 = \\frac{V^2}{R} \\)",symbols:[{symbol:"P",desc:"Power (W)"},{symbol:"V",desc:"Voltage (V)"},{symbol:"I",desc:"Current (A)"},{symbol:"R",desc:"Resistance (Ω)"}]},
+{section:"Electrical Power",name:"Energy Transfer",formula:"\\( E = QV = VIt = RI^2 t = \\frac{V^2}{R} t \\)",symbols:[{symbol:"E",desc:"Energy (J)"},{symbol:"Q",desc:"Charge (C)"},{symbol:"V",desc:"Voltage (V)"},{symbol:"I",desc:"Current (A)"},{symbol:"R",desc:"Resistance (Ω)"},{symbol:"t",desc:"Time (s)"}]},
 {section:"Electrical Power",name:"Cost of using electricity",formula:"\\( \\text{cost} = E(\\text{kWh}) \\times \\text{price/1kWh} \\)",symbols:[{symbol:"E",desc:"Energy (kWh)"},{symbol:"price",desc:"Cost per kWh (Currency)"}]},
 {section:"Heat Energy",name:"Heat gained or lost",formula:"\\( Q = mc\\Delta T \\)",symbols:[{symbol:"Q",desc:"Heat Energy (J)"},{symbol:"m",desc:"Mass (kg)"},{symbol:"c",desc:"Specific heat capacity (J/kg·K)"},{symbol:"ΔT",desc:"Change in temp (K or °C)"}]},
-{section:"Heat Energy",name:"Specific heat capacity",formula:"\\( c = \\frac{Q}{m\\Delta T} \\)",symbols:[{symbol:"c",desc:"Specific heat capacity (J/kg·K)"}]},
-{section:"Heat Energy",name:"Conservation of energy",formula:"\\( E = Q \\Leftrightarrow RI^2 t = mc\\Delta T \\)",symbols:[{symbol:"E",desc:"Electrical Energy (J)"},{symbol:"Q",desc:"Heat Energy (J)"}]},
-{section:"Heat Energy",name:"Total Energy",formula:"\\( E_L = E \\times \\% \\text{ light} \\), \\( E_H = E \\times \\% \\text{ heat} \\)",symbols:[{symbol:"E_L",desc:"Light Energy (J)"},{symbol:"E_H",desc:"Heat Energy (J)"}]}
+{section:"Heat Energy",name:"Specific heat capacity",formula:"\\( c = \\frac{Q}{m\\Delta T} \\)",symbols:[{symbol:"c",desc:"Specific heat capacity (J/kg·K)"},{symbol:"Q",desc:"Heat Energy (J)"},{symbol:"m",desc:"Mass (kg)"},{symbol:"ΔT",desc:"Change in temp (K or °C)"}]},
+{section:"Heat Energy",name:"Conservation of energy",formula:"\\( E = Q \\Leftrightarrow RI^2 t = mc\\Delta T \\)",symbols:[{symbol:"E",desc:"Electrical Energy (J)"},{symbol:"Q",desc:"Heat Energy (J)"},{symbol:"R",desc:"Resistance (Ω)"},{symbol:"I",desc:"Current (A)"},{symbol:"t",desc:"Time (s)"},{symbol:"m",desc:"Mass (kg)"},{symbol:"c",desc:"Specific heat capacity (J/kg·K)"},{symbol:"ΔT",desc:"Change in temp (K or °C)"}]},
+{section:"Heat Energy",name:"Total Energy",formula:"\\( E_L = E \\times \\% \\text{ light} \\), \\( E_H = E \\times \\% \\text{ heat} \\)",symbols:[{symbol:"E",desc:"Total Electrical Energy (J)"},{symbol:"E_L",desc:"Light Energy (J)"},{symbol:"E_H",desc:"Heat Energy (J)"}]}
 ],flashcards:[
 {front:"What is the fundamental definition of power?", back:"\\( P = \\frac{W}{t} = \\frac{E}{t} \\)"},
 {front:"What is the formula for Electrical Power using current and resistance?", back:"\\( P = RI^2 \\)"},
@@ -144,7 +149,7 @@ equations:[
 {id:"g9-l5",gifUrl:"https://commons.wikimedia.org/wiki/Special:FilePath/Refraction_animation.gif",title:"Chapter 5: Light",concepts:[],definitions:[],examples:[],
 equations:[
 {section:"Reflection of light",name:"Law of Reflection",formula:"\\( i = r \\)",symbols:[{symbol:"i",desc:"Angle of incidence (°)"},{symbol:"r",desc:"Angle of reflection (°)"}]},
-{section:"Reflection of light",name:"Pinhole Camera",formula:"\\( m = \\frac{h_i}{h_o} = \\frac{d_i}{d_o} \\)",symbols:[{symbol:"m",desc:"Magnification (No unit)"},{symbol:"h_i, h_o",desc:"Image/Object height (m)"},{symbol:"d_i, d_o",desc:"Image/Object distance (m)"}]},
+{section:"Pinhole Camera",name:"Pinhole Camera",formula:"\\( m = \\frac{h_i}{h_o} = \\frac{d_i}{d_o} \\)",symbols:[{symbol:"m",desc:"Magnification (No unit)"},{symbol:"h_i, h_o",desc:"Image/Object height (m)"},{symbol:"d_i, d_o",desc:"Image/Object distance (m)"}]},
 {section:"Refraction of light",name:"Refractive index",formula:"\\( n = \\frac{c}{v} \\)",symbols:[{symbol:"n",desc:"Refractive index (No unit)"},{symbol:"c",desc:"Speed of light in vacuum (m/s)"},{symbol:"v",desc:"Speed of light in medium (m/s)"}]},
 {section:"Refraction of light",name:"Real depth and apparent depth",formula:"\\( n = \\frac{\\text{real depth}}{\\text{apparent depth}} = \\frac{H}{h} \\)",symbols:[{symbol:"H",desc:"Real depth (m)"},{symbol:"h",desc:"Apparent depth (m)"}]},
 {section:"Refraction of light",name:"Snell’s Law",formula:"\\( n_1 \\sin i = n_2 \\sin r \\)",symbols:[{symbol:"n_1, n_2",desc:"Refractive indices of medium 1 and 2"}]},
@@ -493,9 +498,906 @@ function loadLessonDetail(lesson) {
     let currentSection = '';
     
     (lesson.equations || []).forEach(eq => {
-        if (eq.section && eq.section !== currentSection) {
-            currentSection = eq.section;
-            eqHTML += `<div class="equation-section-title" style="grid-column: 1 / -1; margin-top: 2rem; margin-bottom: 0.5rem; border-bottom: 2px solid var(--cyan); padding-bottom: 0.5rem;"><h2 style="color: var(--primary-blue); font-size: 1.5rem;"><i class="fa-solid fa-layer-group"></i> ${currentSection}</h2></div>`;
+        const section = eq.section;
+        if (section && section !== currentSection) {
+            currentSection = section;
+            let sectionGraphic = '';
+            if (section === "Resolving Force (Angle with horizontal axis)") {
+                sectionGraphic = `<div style="text-align: center; margin: 15px 0;"><svg viewBox="-20 -20 160 150" width="200" height="180"><defs><marker id="arr-h" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#8B0000"/></marker><marker id="arr-r-h" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#8B0000"/></marker></defs><line x1="0" y1="100" x2="130" y2="100" stroke="#8B0000" stroke-width="2" marker-end="url(#arr-h)"/><line x1="0" y1="100" x2="0" y2="-10" stroke="#8B0000" stroke-width="2" marker-end="url(#arr-h)"/><text x="135" y="105" fill="#8B0000" font-family="serif" font-style="italic" font-size="18">x</text><text x="-15" y="-10" fill="#8B0000" font-family="serif" font-style="italic" font-size="18">y</text><text x="-15" y="115" fill="#8B0000" font-family="serif" font-style="italic" font-size="18">O</text><line x1="100" y1="100" x2="100" y2="40" stroke="#8B0000" stroke-width="2" stroke-dasharray="6,4"/><line x1="0" y1="40" x2="100" y2="40" stroke="#8B0000" stroke-width="2" stroke-dasharray="6,4"/><text x="100" y="125" fill="#8B0000" font-family="serif" font-style="italic" font-size="18" text-anchor="middle">F<tspan dy="5" font-size="12">x</tspan></text><text x="-25" y="45" fill="#8B0000" font-family="serif" font-style="italic" font-size="18">F<tspan dy="5" font-size="12">y</tspan></text><line x1="0" y1="100" x2="100" y2="40" stroke="#8B0000" stroke-width="3" marker-end="url(#arr-r-h)"/><text x="105" y="35" fill="#8B0000" font-family="serif" font-style="italic" font-size="18" font-weight="bold">F</text><path d="M 35 100 A 35 35 0 0 0 29 80" fill="none" stroke="#8B0000" stroke-width="2"/><text x="42" y="94" fill="#8B0000" font-family="serif" font-style="italic" font-size="18">θ</text></svg></div>`;
+            } else if (section === "Resolving Force (Angle with vertical axis)") {
+                sectionGraphic = `<div style="text-align: center; margin: 15px 0;"><svg viewBox="-20 -20 160 150" width="200" height="180"><defs><marker id="arr-v" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#8B0000"/></marker><marker id="arr-r-v" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#8B0000"/></marker></defs><line x1="0" y1="100" x2="130" y2="100" stroke="#8B0000" stroke-width="2" marker-end="url(#arr-v)"/><line x1="0" y1="100" x2="0" y2="-10" stroke="#8B0000" stroke-width="2" marker-end="url(#arr-v)"/><text x="135" y="105" fill="#8B0000" font-family="serif" font-style="italic" font-size="18">x</text><text x="-15" y="-10" fill="#8B0000" font-family="serif" font-style="italic" font-size="18">y</text><text x="-15" y="115" fill="#8B0000" font-family="serif" font-style="italic" font-size="18">O</text><line x1="70" y1="100" x2="70" y2="20" stroke="#8B0000" stroke-width="2" stroke-dasharray="6,4"/><line x1="0" y1="20" x2="70" y2="20" stroke="#8B0000" stroke-width="2" stroke-dasharray="6,4"/><text x="70" y="125" fill="#8B0000" font-family="serif" font-style="italic" font-size="18" text-anchor="middle">F<tspan dy="5" font-size="12">x</tspan></text><text x="-25" y="25" fill="#8B0000" font-family="serif" font-style="italic" font-size="18">F<tspan dy="5" font-size="12">y</tspan></text><line x1="0" y1="100" x2="70" y2="20" stroke="#8B0000" stroke-width="3" marker-end="url(#arr-r-v)"/><text x="75" y="15" fill="#8B0000" font-family="serif" font-style="italic" font-size="18" font-weight="bold">F</text><path d="M 0 65 A 35 35 0 0 1 25 75" fill="none" stroke="#8B0000" stroke-width="2"/><text x="10" y="60" fill="#8B0000" font-family="serif" font-style="italic" font-size="18">θ</text></svg></div>`;
+            } else if (section === "Resultant Force (Perpendicular)") {
+                sectionGraphic = `<div style="text-align: center; margin: 15px 0;"><svg viewBox="0 0 160 160" width="220" height="220"><defs><marker id="arr-b" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#333"/></marker></defs><line x1="20" y1="120" x2="20" y2="20" stroke="#333" stroke-width="2" marker-end="url(#arr-b)"/><line x1="20" y1="20" x2="140" y2="20" stroke="#333" stroke-width="2" marker-end="url(#arr-b)"/><line x1="20" y1="120" x2="140" y2="20" stroke="#333" stroke-width="2" stroke-dasharray="6,4" marker-end="url(#arr-b)"/><path d="M 20 35 L 35 35 L 35 20" fill="none" stroke="#333" stroke-width="2"/><path d="M 20 85 A 35 35 0 0 1 47 97" fill="none" stroke="#333" stroke-width="2"/><text x="5" y="75" font-family="sans-serif" font-weight="bold" font-style="italic" font-size="18" fill="#333">a</text><text x="75" y="15" font-family="sans-serif" font-weight="bold" font-style="italic" font-size="18" fill="#333">b</text><text x="85" y="80" font-family="sans-serif" font-weight="bold" font-style="italic" font-size="18" fill="#333">R</text><text x="26" y="110" font-family="serif" font-style="italic" font-size="18" fill="#333">θ</text><text x="80" y="150" font-family="sans-serif" font-weight="bold" font-size="18" fill="#c00" text-anchor="middle">Resultant vector</text></svg></div>`;
+            } else if (currentSection === "Trigonometry Basics (Right Triangle)") {
+                sectionGraphic = `<div style="text-align: center; margin: 15px 0;"><svg viewBox="-20 0 180 160" width="220" height="220"><line x1="20" y1="130" x2="20" y2="30" stroke="#333" stroke-width="2"/><line x1="20" y1="30" x2="140" y2="30" stroke="#333" stroke-width="2"/><line x1="20" y1="130" x2="140" y2="30" stroke="#333" stroke-width="2" stroke-dasharray="6,4"/><path d="M 20 45 L 35 45 L 35 30" fill="none" stroke="#333" stroke-width="2"/><path d="M 20 95 A 35 35 0 0 1 47 107" fill="none" stroke="#333" stroke-width="2"/><text x="10" y="80" transform="rotate(-90 10 80)" font-family="sans-serif" font-style="italic" font-size="18" fill="#555">adjacent</text><text x="80" y="20" font-family="sans-serif" font-style="italic" font-size="18" fill="#555" text-anchor="middle">opposite</text><text x="85" y="105" transform="rotate(-40 85 105)" font-family="sans-serif" font-style="italic" font-size="18" fill="#555" text-anchor="middle">hypotenuse</text><text x="26" y="118" font-family="serif" font-style="italic" font-size="18" fill="#333">θ</text><text x="80" y="155" font-family="sans-serif" font-weight="bold" font-size="18" fill="#c00" text-anchor="middle">Right triangle</text></svg></div>`;
+            } else if (currentSection === "Resultant Force (At angle θ)") {
+                sectionGraphic = `<div style="text-align: center; margin: 15px 0;"><svg viewBox="0 0 350 160" style="max-width:450px; width:100%; height:auto;"><defs><marker id="arr-a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#e65100"/></marker><marker id="arr-b" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#0277bd"/></marker><marker id="arr-r" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#2e7d32"/></marker></defs><g transform="translate(10, 20)"><path d="M 30 100 A 20 20 0 0 0 23 85" fill="none" stroke="#333" stroke-width="2"/><text x="32" y="93" font-family="sans-serif" font-weight="bold" font-size="14" fill="#333">θ</text><line x1="10" y1="100" x2="100" y2="100" stroke="#e65100" stroke-width="3" marker-end="url(#arr-a)"/><line x1="10" y1="100" x2="60" y2="40" stroke="#0277bd" stroke-width="3" marker-end="url(#arr-b)"/><text x="90" y="90" font-family="sans-serif" font-weight="bold" font-size="16" fill="#e65100">a</text><text x="45" y="30" font-family="sans-serif" font-weight="bold" font-size="16" fill="#0277bd">b</text><text x="35" y="130" font-family="sans-serif" font-weight="bold" font-size="16" fill="#e65100">Fig. A</text></g><g transform="translate(160, 20)"><path d="M 30 100 A 20 20 0 0 0 23 85" fill="none" stroke="#333" stroke-width="2"/><text x="32" y="93" font-family="sans-serif" font-weight="bold" font-size="14" fill="#333">θ</text><line x1="60" y1="40" x2="150" y2="40" stroke="#e65100" stroke-width="2" stroke-dasharray="6,4"/><line x1="100" y1="100" x2="150" y2="40" stroke="#0277bd" stroke-width="2" stroke-dasharray="6,4"/><line x1="10" y1="100" x2="100" y2="100" stroke="#e65100" stroke-width="3" marker-end="url(#arr-a)"/><line x1="10" y1="100" x2="60" y2="40" stroke="#0277bd" stroke-width="3" marker-end="url(#arr-b)"/><line x1="10" y1="100" x2="150" y2="40" stroke="#2e7d32" stroke-width="3" marker-end="url(#arr-r)"/><text x="80" y="115" font-family="sans-serif" font-weight="bold" font-size="16" fill="#e65100">a</text><text x="25" y="45" font-family="sans-serif" font-weight="bold" font-size="16" fill="#0277bd">b</text><text x="155" y="35" font-family="sans-serif" font-weight="bold" font-size="16" fill="#2e7d32">R</text><text x="65" y="130" font-family="sans-serif" font-weight="bold" font-size="16" fill="#e65100">Fig. B</text></g></svg></div>`;
+            } else if (currentSection === "Moment") {
+                sectionGraphic = `<div style="text-align: center; margin: 15px 0;"><svg viewBox="0 0 320 260" style="max-width:400px; width:100%; height:auto; background:#fefefe; border-radius:8px; padding:10px;"><defs><marker id="arr-f" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#e91e63"/></marker><marker id="arr-d-start" viewBox="0 0 10 10" refX="2" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M 10 0 L 0 5 L 10 10 z" fill="#333"/></marker><marker id="arr-d-end" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#333"/></marker><linearGradient id="wrench-grad" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#ddd"/><stop offset="100%" stop-color="#999"/></linearGradient></defs><line x1="100" y1="80" x2="180" y2="217" stroke="url(#wrench-grad)" stroke-width="22" stroke-linecap="round"/><circle cx="100" cy="80" r="28" fill="url(#wrench-grad)"/><circle cx="100" cy="80" r="18" fill="#fff"/><polygon points="114,80 107,92.1 93,92.1 86,80 93,67.9 107,67.9" fill="#d4af37" stroke="#b8860b" stroke-width="2"/><circle cx="100" cy="80" r="3" fill="#333"/><line x1="170" y1="200" x2="228" y2="166" stroke="#e91e63" stroke-width="4" marker-end="url(#arr-f)"/><text x="235" y="160" font-family="sans-serif" font-weight="bold" font-size="16" fill="#e91e63">Force = 20 N</text><line x1="100" y1="80" x2="40" y2="115" stroke="#333" stroke-width="1.5" stroke-dasharray="5,3"/><line x1="170" y1="200" x2="110" y2="235" stroke="#333" stroke-width="1.5" stroke-dasharray="5,3"/><line x1="45" y1="112" x2="115" y2="232" stroke="#333" stroke-width="2" marker-start="url(#arr-d-start)" marker-end="url(#arr-d-end)"/><text x="80" y="165" transform="rotate(59.7 80 172)" font-family="sans-serif" font-weight="bold" font-size="16" fill="#333" text-anchor="middle">20 cm</text><line x1="100" y1="77" x2="100" y2="30" stroke="#666" stroke-width="1.5"/><text x="100" y="20" font-family="sans-serif" font-weight="bold" font-size="14" fill="#333" text-anchor="middle">Axis of rotation</text><line x1="90" y1="70" x2="60" y2="40" stroke="#666" stroke-width="1.5"/><text x="55" y="35" font-family="sans-serif" font-weight="bold" font-size="14" fill="#333" text-anchor="end">Nut</text><line x1="140" y1="130" x2="180" y2="100" stroke="#666" stroke-width="1.5"/><text x="185" y="95" font-family="sans-serif" font-weight="bold" font-size="14" fill="#333" text-anchor="start">Spanner</text></svg></div>`;
+            } else if (currentSection === "Moment (Force Components)") {
+                sectionGraphic = `<div style="text-align: center; margin: 15px 0;"><svg viewBox="0 0 500 190" style="max-width:600px; width:100%; height:auto; background:#fff; border-radius:8px; padding:10px;"><defs><marker id="arr-end" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#000080"/></marker><marker id="arr-start" viewBox="0 0 10 10" refX="0" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#000080"/></marker><filter id="shadow" x="-5%" y="-5%" width="110%" height="110%"><feDropShadow dx="2" dy="2" stdDeviation="2" flood-opacity="0.3"/></filter></defs><path d="M 25 140 L 75 140 L 50 110 Z" fill="#99d6ff" stroke="#000080" stroke-width="2" filter="url(#shadow)"/><path d="M 425 140 L 475 140 L 450 110 Z" fill="#99d6ff" stroke="#000080" stroke-width="2" filter="url(#shadow)"/><rect x="20" y="80" width="460" height="30" fill="#99d6ff" stroke="#000080" stroke-width="2" filter="url(#shadow)"/><text x="50" y="102" font-family="serif" font-weight="bold" font-size="18" fill="#e60000" text-anchor="middle">A</text><text x="250" y="102" font-family="serif" font-weight="bold" font-size="18" fill="#e60000" text-anchor="middle">O</text><text x="450" y="102" font-family="serif" font-weight="bold" font-size="18" fill="#e60000" text-anchor="middle">B</text><line x1="50" y1="20" x2="50" y2="75" stroke="#000080" stroke-width="2" marker-end="url(#arr-end)"/><text x="50" y="15" font-family="serif" font-weight="bold" font-size="18" fill="#e60000" text-anchor="middle">F<tspan dy="5" font-size="12">A</tspan></text><line x1="250" y1="20" x2="250" y2="75" stroke="#000080" stroke-width="2" marker-end="url(#arr-end)"/><text x="250" y="15" font-family="serif" font-weight="bold" font-size="18" fill="#e60000" text-anchor="middle">F</text><line x1="450" y1="20" x2="450" y2="75" stroke="#000080" stroke-width="2" marker-end="url(#arr-end)"/><text x="450" y="15" font-family="serif" font-weight="bold" font-size="18" fill="#e60000" text-anchor="middle">F<tspan dy="5" font-size="12">B</tspan></text><line x1="55" y1="50" x2="245" y2="50" stroke="#000080" stroke-width="1.5" marker-start="url(#arr-start)" marker-end="url(#arr-end)"/><text x="150" y="42" font-family="serif" font-weight="bold" font-size="16" fill="#e60000" text-anchor="middle">OA</text><line x1="255" y1="50" x2="445" y2="50" stroke="#000080" stroke-width="1.5" marker-start="url(#arr-start)" marker-end="url(#arr-end)"/><text x="350" y="42" font-family="serif" font-weight="bold" font-size="16" fill="#e60000" text-anchor="middle">OB</text><line x1="50" y1="155" x2="450" y2="155" stroke="#000080" stroke-width="1.5" marker-start="url(#arr-start)" marker-end="url(#arr-end)"/><text x="250" y="173" font-family="serif" font-weight="bold" font-size="18" fill="#e60000" text-anchor="middle">OA + OB = AB</text></svg></div>`;
+            } else if (currentSection === "Lever") {
+                sectionGraphic = `<div style="text-align: center; margin: 15px 0;"><svg viewBox="0 0 920 200" style="max-width:100%; height:auto; background:#fff; border-radius:8px; padding:10px;"><defs><marker id="arr-vec" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#000080"/></marker></defs><style>.beam { fill: #68bacc; stroke: #000080; stroke-width: 3; } .fulcrum { fill: #68bacc; stroke: #000080; stroke-width: 3; } .load { fill: #d11173; stroke: #000080; stroke-width: 3; } .vec { stroke: #000080; stroke-width: 4; } .dash { stroke: #000080; stroke-width: 3; stroke-dasharray: 6,6; } .tick { stroke: #000080; stroke-width: 3; } .txt-red { font-family: sans-serif; font-weight: bold; font-size: 18px; fill: #cc0000; text-anchor: middle; } .sub { font-size: 12px; }</style><g transform="translate(10, 10)"><path d="M 110 130 L 150 130 L 130 100 Z" class="fulcrum" /><rect x="0" y="80" width="260" height="20" class="beam" /><text x="130" y="95" class="txt-red">O</text><rect x="200" y="50" width="60" height="30" class="load" /><text x="230" y="40" class="txt-red">F<tspan dy="5" class="sub">R</tspan></text><line x1="20" y1="10" x2="20" y2="80" class="vec" marker-end="url(#arr-vec)" /><text x="35" y="30" class="txt-red">F<tspan dy="5" class="sub">E</tspan></text><line x1="20" y1="120" x2="20" y2="140" class="tick" /><line x1="130" y1="120" x2="130" y2="140" class="tick" /><line x1="20" y1="130" x2="130" y2="130" class="dash" /><text x="75" y="152" class="txt-red">d<tspan dy="5" class="sub">E</tspan></text><line x1="130" y1="50" x2="130" y2="70" class="tick" /><line x1="230" y1="50" x2="230" y2="70" class="tick" /><line x1="130" y1="60" x2="230" y2="60" class="dash" /><text x="180" y="55" class="txt-red">d<tspan dy="5" class="sub">R</tspan></text><text x="130" y="175" class="txt-red">First class levers</text></g><g transform="translate(310, 10)"><path d="M 230 130 L 270 130 L 250 100 Z" class="fulcrum" /><rect x="0" y="80" width="260" height="20" class="beam" /><text x="250" y="95" class="txt-red">O</text><rect x="120" y="50" width="60" height="30" class="load" /><text x="150" y="40" class="txt-red">F<tspan dy="5" class="sub">R</tspan></text><line x1="20" y1="80" x2="20" y2="10" class="vec" marker-end="url(#arr-vec)" /><text x="35" y="25" class="txt-red">F<tspan dy="5" class="sub">E</tspan></text><line x1="20" y1="120" x2="20" y2="140" class="tick" /><line x1="250" y1="120" x2="250" y2="140" class="tick" /><line x1="20" y1="130" x2="250" y2="130" class="dash" /><text x="135" y="152" class="txt-red">d<tspan dy="5" class="sub">E</tspan></text><line x1="150" y1="50" x2="150" y2="70" class="tick" /><line x1="250" y1="50" x2="250" y2="70" class="tick" /><line x1="150" y1="60" x2="250" y2="60" class="dash" /><text x="200" y="55" class="txt-red">d<tspan dy="5" class="sub">R</tspan></text><text x="130" y="175" class="txt-red">Second class levers</text></g><g transform="translate(610, 10)"><path d="M 230 130 L 270 130 L 250 100 Z" class="fulcrum" /><rect x="0" y="80" width="260" height="20" class="beam" /><text x="250" y="95" class="txt-red">O</text><rect x="0" y="50" width="60" height="30" class="load" /><text x="30" y="40" class="txt-red">F<tspan dy="5" class="sub">R</tspan></text><line x1="130" y1="80" x2="130" y2="10" class="vec" marker-end="url(#arr-vec)" /><text x="145" y="25" class="txt-red">F<tspan dy="5" class="sub">E</tspan></text><line x1="30" y1="120" x2="30" y2="140" class="tick" /><line x1="250" y1="120" x2="250" y2="140" class="tick" /><line x1="30" y1="130" x2="250" y2="130" class="dash" /><text x="140" y="152" class="txt-red">d<tspan dy="5" class="sub">R</tspan></text><line x1="130" y1="50" x2="130" y2="70" class="tick" /><line x1="250" y1="50" x2="250" y2="70" class="tick" /><line x1="130" y1="60" x2="250" y2="60" class="dash" /><text x="190" y="55" class="txt-red">d<tspan dy="5" class="sub">E</tspan></text><text x="130" y="175" class="txt-red">Third class levers</text></g></svg></div>`;
+            } else if (currentSection === "Inclined Plane") {
+                sectionGraphic = `<div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 20px; margin: 15px 0;">
+                    <svg viewBox="0 0 400 220" style="flex: 1 1 300px; max-width:500px; width:100%; height:auto; background:#fff; border-radius:8px; padding:10px;"><defs><marker id="arr-fe" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#1c2d3d"/></marker><marker id="arr-fr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#db7734"/></marker></defs><polygon points="40,200 360,200 360,60" fill="#cbe6f2" stroke="#2b506e" stroke-width="2"/><path d="M 90 200 A 50 50 0 0 0 85 180" fill="none" stroke="#2b506e" stroke-width="2"/><text x="100" y="195" font-family="serif" font-weight="bold" font-style="italic" font-size="20" fill="#c46210">θ</text><text x="375" y="135" font-family="serif" font-weight="bold" font-style="italic" font-size="22" fill="#ff0000">h</text><line x1="360" y1="200" x2="360" y2="60" stroke="#2b506e" stroke-width="2" stroke-dasharray="4,4"/><text x="110" y="142" font-family="serif" font-weight="bold" font-style="italic" font-size="22" fill="#ff0000" transform="rotate(-23.6, 110, 142)">L</text><g transform="translate(200, 130) rotate(-23.6)"><rect x="-25" y="-36" width="50" height="36" rx="6" fill="#e88543" stroke="#b05e15" stroke-width="2"/></g><line x1="193" y1="114" x2="266" y2="82" stroke="#1c2d3d" stroke-width="7" marker-end="url(#arr-fe)"/><text x="275" y="70" font-family="serif" font-weight="bold" font-style="italic" font-size="22" fill="#1c2d3d">F<tspan dy="5" font-size="14">E</tspan></text><line x1="193" y1="114" x2="193" y2="49" stroke="#db7734" stroke-width="7" marker-end="url(#arr-fr)"/><text x="180" y="38" font-family="serif" font-weight="bold" font-style="italic" font-size="22" fill="#db7734">F<tspan dy="5" font-size="14">R</tspan></text></svg>
+                </div>`;
+            } else if (currentSection === "Pulley") {
+                sectionGraphic = `<div style="text-align: center; margin: 15px 0;">
+<svg viewBox="0 0 900 420" style="max-width:900px; width:100%; height:auto; background:#fff; border-radius:8px; padding:10px; border:1px solid #ddd;">
+    <defs>
+        <marker id="red-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#e74c3c"/></marker>
+        <marker id="blue-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#2980b9"/></marker>
+        <g id="weight">
+            <polygon points="-40,40 40,40 25,-10 -25,-10" fill="#dcdde1" stroke="#2f3640" stroke-width="2"/>
+            <circle cx="0" cy="-15" r="5" fill="none" stroke="#2f3640" stroke-width="2"/>
+            <line x1="0" y1="-10" x2="0" y2="-15" stroke="#2f3640" stroke-width="2"/>
+            <line x1="0" y1="40" x2="0" y2="80" stroke="#2980b9" stroke-width="4" marker-end="url(#blue-arrow)"/>
+            <text x="20" y="70" fill="#2980b9" font-family="sans-serif" font-weight="bold" font-size="16">100 N</text>
+        </g>
+        <g id="bracket">
+            <path d="M -15,0 L -15,-25 L 0,-35 L 15,-25 L 15,0" fill="none" stroke="#8e44ad" stroke-width="8" stroke-linejoin="round"/>
+            <line x1="0" y1="-35" x2="0" y2="-55" stroke="#8e44ad" stroke-width="8" stroke-linecap="round"/>
+            <circle cx="0" cy="0" r="6" fill="#2c3e50"/>
+        </g>
+        <g id="pulley">
+            <circle cx="0" cy="0" r="30" fill="#ecf0f1" stroke="#34495e" stroke-width="2"/>
+            <circle cx="0" cy="0" r="20" fill="#bdc3c7" stroke="#34495e" stroke-width="1"/>
+        </g>
+    </defs>
+    
+    <rect x="50" y="35" width="800" height="10" fill="#bdc3c7" stroke="#95a5a6" stroke-width="1"/>
+    
+    <g transform="translate(150, 100)">
+        <line x1="30" y1="0" x2="30" y2="90" stroke="#f1c40f" stroke-width="4"/>
+        <line x1="-30" y1="0" x2="-80" y2="100" stroke="#f1c40f" stroke-width="4"/>
+        <path d="M -30,0 A 30 30 0 0 1 30,0" fill="none" stroke="#f1c40f" stroke-width="4"/>
+        <line x1="-80" y1="100" x2="-105" y2="150" stroke="#e74c3c" stroke-width="4" marker-end="url(#red-arrow)"/>
+        <text x="-120" y="110" fill="#555" font-family="sans-serif" font-weight="bold" font-size="16">100 N</text>
+        <text x="40" y="50" fill="#555" font-family="sans-serif" font-weight="bold" font-size="16">100 N</text>
+        <use href="#pulley"/>
+        <use href="#bracket"/>
+        <g transform="translate(30, 105)"><use href="#weight"/></g>
+        <text x="0" y="300" fill="#000080" font-family="sans-serif" font-weight="bold" font-size="22" text-anchor="middle">Fixed pulley</text>
+    </g>
+
+    <g transform="translate(450, 160)">
+        <line x1="-30" y1="0" x2="-30" y2="-115" stroke="#f1c40f" stroke-width="4"/>
+        <line x1="30" y1="0" x2="30" y2="-100" stroke="#f1c40f" stroke-width="4"/>
+        <path d="M -30,0 A 30 30 0 0 0 30,0" fill="none" stroke="#f1c40f" stroke-width="4"/>
+        <line x1="30" y1="-100" x2="30" y2="-140" stroke="#e74c3c" stroke-width="4" marker-end="url(#red-arrow)"/>
+        <text x="45" y="-90" fill="#555" font-family="sans-serif" font-weight="bold" font-size="16">50 N</text>
+        <text x="-75" y="-70" fill="#555" font-family="sans-serif" font-weight="bold" font-size="16">50 N</text>
+        <use href="#pulley"/>
+        <g transform="rotate(180)"><use href="#bracket"/></g>
+        <g transform="translate(0, 70)"><use href="#weight"/></g>
+        <text x="0" y="240" fill="#000080" font-family="sans-serif" font-weight="bold" font-size="22" text-anchor="middle">Movable pulley</text>
+    </g>
+
+    <g transform="translate(750, 100)">
+        <line x1="-30" y1="0" x2="-80" y2="100" stroke="#f1c40f" stroke-width="4"/>
+        <path d="M -30,0 A 30 30 0 0 1 30,0" fill="none" stroke="#f1c40f" stroke-width="4"/>
+        <line x1="30" y1="0" x2="30" y2="90" stroke="#f1c40f" stroke-width="4"/>
+        <path d="M -30,90 A 30 30 0 0 0 30,90" fill="none" stroke="#f1c40f" stroke-width="4"/>
+        <line x1="-30" y1="90" x2="0" y2="35" stroke="#f1c40f" stroke-width="4"/>
+        <line x1="-80" y1="100" x2="-105" y2="150" stroke="#e74c3c" stroke-width="4" marker-end="url(#red-arrow)"/>
+        
+        <text x="-120" y="110" fill="#555" font-family="sans-serif" font-weight="bold" font-size="16">50 N</text>
+        <text x="40" y="45" fill="#555" font-family="sans-serif" font-weight="bold" font-size="16">50 N</text>
+        <text x="-45" y="60" fill="#555" font-family="sans-serif" font-weight="bold" font-size="16">50 N</text>
+        
+        <path d="M 0,0 L 0,35" stroke="#8e44ad" stroke-width="8"/>
+        <circle cx="0" cy="35" r="5" fill="#ecf0f1" stroke="#8e44ad" stroke-width="3"/>
+        
+        <use href="#pulley"/>
+        <use href="#bracket"/>
+        
+        <g transform="translate(0, 90)">
+            <use href="#pulley"/>
+            <g transform="rotate(180)"><use href="#bracket"/></g>
+            <g transform="translate(0, 70)"><use href="#weight"/></g>
+        </g>
+        <text x="0" y="300" fill="#000080" font-family="sans-serif" font-weight="bold" font-size="22" text-anchor="middle">Compound pulley</text>
+    </g>
+</svg>
+</div>`;
+            } else if (currentSection === "Gears System") {
+                sectionGraphic = `<div style="text-align: center; margin: 15px 0;">
+                    <svg viewBox="0 0 700 300" style="max-width:700px; width:100%; height:auto; background:#fff; border-radius:8px; padding:10px; border:1px solid #ddd;">
+                        <defs>
+                            <marker id="arr-gear" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#2c3e50"/></marker>
+                            <path id="t16" d="M -5,51 L -2,61 L 2,61 L 5,51 Z" fill="#9aa9b8" stroke="#2c3e50" stroke-width="1.5"/>
+                            <g id="t16_2"><use href="#t16"/><use href="#t16" transform="rotate(22.5)"/></g><g id="t16_4"><use href="#t16_2"/><use href="#t16_2" transform="rotate(45)"/></g><g id="t16_8"><use href="#t16_4"/><use href="#t16_4" transform="rotate(90)"/></g><g id="gear16_teeth"><use href="#t16_8"/><use href="#t16_8" transform="rotate(180)"/></g>
+                            <path id="t32" d="M -5,106 L -2,115 L 2,115 L 5,106 Z" fill="#9aa9b8" stroke="#2c3e50" stroke-width="1.5"/>
+                            <g id="t32_2"><use href="#t32"/><use href="#t32" transform="rotate(11.25)"/></g><g id="t32_4"><use href="#t32_2"/><use href="#t32_2" transform="rotate(22.5)"/></g><g id="t32_8"><use href="#t32_4"/><use href="#t32_4" transform="rotate(45)"/></g><g id="t32_16"><use href="#t32_8"/><use href="#t32_8" transform="rotate(90)"/></g><g id="gear32_teeth"><use href="#t32_16"/><use href="#t32_16" transform="rotate(180)"/></g>
+                            <g id="hub"><circle cx="0" cy="0" r="16" fill="#7f8c8d" stroke="#2c3e50" stroke-width="2"/><path d="M -16,10 L 16,10 L 16,16 L -16,16 Z" fill="#bdc3c7" stroke="#2c3e50" stroke-width="1.5"/><path d="M -8,10 L -8,-2 A 8 8 0 0 1 8,-2 L 8,10 Z" fill="#bdc3c7" stroke="#2c3e50" stroke-width="1.5"/><circle cx="0" cy="2" r="3" fill="#2c3e50"/></g>
+                        </defs>
+                        <g transform="translate(220, 160)">
+                            <use href="#gear16_teeth"/>
+                            <circle cx="0" cy="0" r="52" fill="#9aa9b8" stroke="#2c3e50" stroke-width="2"/>
+                            <circle cx="0" cy="0" r="56" fill="none" stroke="#ecf0f1" stroke-width="1.5" stroke-dasharray="6,4"/>
+                            <circle cx="0" cy="0" r="38" fill="none" stroke="#7f8c8d" stroke-width="1"/>
+                            <use href="#hub"/>
+                        </g>
+                        <g transform="translate(387, 160)">
+                            <g transform="rotate(5.625)"><use href="#gear32_teeth"/></g>
+                            <circle cx="0" cy="0" r="107" fill="#9aa9b8" stroke="#2c3e50" stroke-width="2"/>
+                            <circle cx="0" cy="0" r="111" fill="none" stroke="#ecf0f1" stroke-width="1.5" stroke-dasharray="6,4"/>
+                            <circle cx="0" cy="0" r="80" fill="none" stroke="#7f8c8d" stroke-width="1"/>
+                            <use href="#hub"/>
+                        </g>
+                        <path d="M 145,120 A 85,85 0 0,1 270,90" fill="none" stroke="#2c3e50" stroke-width="3" marker-end="url(#arr-gear)"/>
+                        <path d="M 502,100 A 130,130 0 0,0 327,45" fill="none" stroke="#2c3e50" stroke-width="3" marker-end="url(#arr-gear)"/>
+                        <text x="145" y="170" font-family="sans-serif" font-weight="bold" font-size="28" fill="#0000cc" text-anchor="end">Driver gear</text>
+                        <text x="515" y="170" font-family="sans-serif" font-weight="bold" font-size="28" fill="#0000cc" text-anchor="start">Driven gear</text>
+                    </svg>
+                </div>`;
+            } else if (currentSection === "Belt System") {
+                sectionGraphic = `<div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 20px; margin: 15px 0;">
+                    <svg viewBox="0 0 600 320" style="flex: 1 1 300px; max-width:500px; width:100%; height:auto; background:#fff; border-radius:8px; padding:10px; border:1px solid #ddd;">
+                        <line x1="142" y1="111" x2="434" y2="62" stroke="#546e7a" stroke-width="5"/>
+                        <line x1="142" y1="209" x2="434" y2="258" stroke="#546e7a" stroke-width="5"/>
+                        <circle cx="150" cy="160" r="50" fill="#fff" stroke="#e67e22" stroke-width="4"/>
+                        <circle cx="150" cy="160" r="16" fill="#e67e22"/>
+                        <circle cx="450" cy="160" r="100" fill="#fff" stroke="#455a64" stroke-width="4"/>
+                        <circle cx="450" cy="160" r="22" fill="#455a64"/>
+                        <text x="150" y="300" font-family="sans-serif" font-weight="bold" font-size="24" fill="#000" text-anchor="middle">Driver (Effort)</text>
+                        <text x="450" y="300" font-family="sans-serif" font-weight="bold" font-size="24" fill="#000" text-anchor="middle">Driven (Load)</text>
+                    </svg>
+                    <svg viewBox="0 0 450 320" style="flex: 1 1 300px; max-width:500px; width:100%; height:auto; background:#fff; border-radius:8px; padding:10px; border:1px solid #ddd;">
+                        <defs><marker id="red-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#e74c3c"/></marker></defs>
+                        <line x1="150" y1="150" x2="350" y2="150" stroke="#3498db" stroke-width="10" stroke-linecap="round"/>
+                        <line x1="150" y1="150" x2="250" y2="40" stroke="#3498db" stroke-width="10" stroke-linecap="round"/>
+                        <line x1="350" y1="150" x2="250" y2="40" stroke="#3498db" stroke-width="10" stroke-linecap="round"/>
+                        <line x1="250" y1="40" x2="250" y2="20" stroke="#2c3e50" stroke-width="8" stroke-linecap="round"/>
+                        <rect x="220" y="5" width="60" height="15" fill="#2c3e50" rx="5"/>
+                        <line x1="150" y1="50" x2="150" y2="250" stroke="#bdc3c7" stroke-width="2"/>
+                        <line x1="50" y1="150" x2="250" y2="150" stroke="#bdc3c7" stroke-width="2"/>
+                        <line x1="79" y1="79" x2="221" y2="221" stroke="#bdc3c7" stroke-width="2"/>
+                        <line x1="79" y1="221" x2="221" y2="79" stroke="#bdc3c7" stroke-width="2"/>
+                        <circle cx="150" cy="150" r="100" fill="none" stroke="#2c3e50" stroke-width="10"/>
+                        <circle cx="150" cy="150" r="94" fill="none" stroke="#bdc3c7" stroke-width="3"/>
+                        <line x1="150" y1="130" x2="350" y2="115" stroke="#7f8c8d" stroke-width="4" stroke-dasharray="4,2"/>
+                        <line x1="150" y1="170" x2="350" y2="185" stroke="#7f8c8d" stroke-width="4" stroke-dasharray="4,2"/>
+                        <circle cx="150" cy="150" r="20" fill="#95a5a6" stroke="#34495e" stroke-width="2"/>
+                        <circle cx="350" cy="150" r="35" fill="#95a5a6" stroke="#34495e" stroke-width="2"/>
+                        <circle cx="150" cy="150" r="5" fill="#2c3e50"/>
+                        <circle cx="350" cy="150" r="8" fill="#2c3e50"/>
+                        <line x1="350" y1="150" x2="350" y2="210" stroke="#34495e" stroke-width="8" stroke-linecap="round"/>
+                        <rect x="325" y="210" width="50" height="12" fill="#2c3e50" rx="3"/>
+                        <text x="150" y="300" font-family="sans-serif" font-size="22" font-weight="bold" fill="#333" text-anchor="middle">Wheel</text>
+                        <line x1="150" y1="275" x2="150" y2="255" stroke="#e74c3c" stroke-width="4" marker-end="url(#red-arrow)"/>
+                        <text x="50" y="70" font-family="sans-serif" font-size="22" font-weight="bold" fill="#333" text-anchor="middle">Gear</text>
+                        <line x1="60" y1="80" x2="135" y2="135" stroke="#e74c3c" stroke-width="4" marker-end="url(#red-arrow)"/>
+                        <text x="350" y="300" font-family="sans-serif" font-size="22" font-weight="bold" fill="#333" text-anchor="middle">Pedal</text>
+                        <line x1="350" y1="275" x2="350" y2="225" stroke="#e74c3c" stroke-width="4" marker-end="url(#red-arrow)"/>
+                    </svg>
+                </div>`;
+            } else if (currentSection === "Wheel and Axle") {
+                sectionGraphic = `<div style="text-align: center; margin: 15px 0;">
+    <svg viewBox="0 0 500 500" style="max-width:500px; width:100%; height:auto; background:#fff; border-radius:8px; padding:10px; border:1px solid #ddd;">
+        <defs>
+            <marker id="arr-l" viewBox="0 0 10 10" refX="2" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M 10 0 L 0 5 L 10 10 z" fill="#333"/></marker>
+            <marker id="arr-r" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#333"/></marker>
+            <radialGradient id="wheel-grad" cx="50%" cy="50%" r="50%">
+                <stop offset="60%" stop-color="#fff"/>
+                <stop offset="100%" stop-color="#bdc3c7"/>
+            </radialGradient>
+            <radialGradient id="axle-grad" cx="50%" cy="50%" r="50%">
+                <stop offset="0%" stop-color="#ecf0f1"/>
+                <stop offset="100%" stop-color="#95a5a6"/>
+            </radialGradient>
+        </defs>
+        
+        <circle cx="250" cy="180" r="140" fill="url(#wheel-grad)" stroke="#2c3e50" stroke-width="4"/>
+        <circle cx="250" cy="180" r="125" fill="none" stroke="#bdc3c7" stroke-width="2"/>
+        
+        <g stroke="#bdc3c7" stroke-width="25" stroke-linecap="round">
+            <line x1="250" y1="60" x2="250" y2="300"/>
+            <line x1="146" y1="120" x2="354" y2="240"/>
+            <line x1="146" y1="240" x2="354" y2="120"/>
+        </g>
+        
+        <circle cx="250" cy="180" r="60" fill="url(#axle-grad)" stroke="#2c3e50" stroke-width="4"/>
+        <circle cx="250" cy="180" r="25" fill="#bdc3c7" stroke="#34495e" stroke-width="2"/>
+        
+        <path d="M 250,40 A 140 140 0 0 1 390,180" fill="none" stroke="#34495e" stroke-width="3"/>
+        <path d="M 250,120 A 60 60 0 0 0 190,180" fill="none" stroke="#ecf0f1" stroke-width="4"/>
+        <path d="M 250,120 A 60 60 0 0 0 190,180" fill="none" stroke="#34495e" stroke-width="2" stroke-dasharray="4,2"/>
+        <line x1="390" y1="180" x2="390" y2="350" stroke="#34495e" stroke-width="3"/>
+        <line x1="190" y1="180" x2="190" y2="306" stroke="#34495e" stroke-width="3"/>
+        
+        <polygon points="380,350 400,350 390,370" fill="#34495e"/>
+        <text x="410" y="360" font-family="sans-serif" font-weight="bold" font-size="20" fill="#2c3e50">Fe</text>
+        
+        <ellipse cx="190" cy="415" rx="25" ry="8" fill="#dcdde1" stroke="#2c3e50" stroke-width="2.5"/>
+        <polygon points="150,335 230,335 215,415 165,415" fill="#ecf0f1" stroke="#2c3e50" stroke-width="2.5"/>
+        <ellipse cx="190" cy="335" rx="40" ry="12" fill="#dcdde1" stroke="#2c3e50" stroke-width="2.5"/>
+        <ellipse cx="190" cy="335" rx="33" ry="8" fill="#95a5a6"/>
+        <path d="M 150,335 Q 190,260 230,335" fill="none" stroke="#7f8c8d" stroke-width="3"/>
+        <circle cx="190" cy="310" r="4" fill="none" stroke="#2c3e50" stroke-width="2"/>
+        <text x="100" y="390" font-family="sans-serif" font-weight="bold" font-size="20" fill="#2c3e50">Fr</text>
+        
+        <line x1="220" y1="180" x2="280" y2="180" stroke="#7f8c8d" stroke-width="1.5"/>
+        <line x1="250" y1="150" x2="250" y2="390" stroke="#7f8c8d" stroke-width="1.5"/>
+        
+        <line x1="190" y1="255" x2="250" y2="255" stroke="#333" stroke-width="1.5" marker-start="url(#arr-l)" marker-end="url(#arr-r)"/>
+        <text x="220" y="245" font-family="sans-serif" font-style="italic" font-size="20" fill="#333" text-anchor="middle">r</text>
+        
+        <line x1="250" y1="255" x2="390" y2="255" stroke="#333" stroke-width="1.5" marker-start="url(#arr-l)" marker-end="url(#arr-r)"/>
+        <text x="320" y="245" font-family="sans-serif" font-style="italic" font-size="20" fill="#333" text-anchor="middle">R</text>
+    </svg>
+                </div>`;
+            } else if (currentSection === "Electrical Power") {
+                sectionGraphic = `<div style="text-align: center; margin: 15px 0;">
+    <svg viewBox="0 0 600 600" style="max-width:600px; width:100%; height:auto; background:#fff; border-radius:8px; padding:10px; border:1px solid #ddd;">
+        <defs>
+            <path id="curve-TL" d="M 50,300 A 250 250 0 0 1 300,50" />
+            <path id="curve-TR" d="M 300,50 A 250 250 0 0 1 550,300" />
+            <path id="curve-BR" d="M 300,550 A 250 250 0 0 0 550,300" />
+            <path id="curve-BL" d="M 300,550 A 250 250 0 0 1 50,300" />
+        </defs>
+        
+        <!-- Outer Quadrants -->
+        <path d="M 300,300 L 300,20 A 280 280 0 0 0 20,300 Z" fill="#dcf1fa"/>
+        <path d="M 300,300 L 300,20 A 280 280 0 0 1 580,300 Z" fill="#d8ebcd"/>
+        <path d="M 300,300 L 580,300 A 280 280 0 0 1 300,580 Z" fill="#fbe2c5"/>
+        <path d="M 300,300 L 20,300 A 280 280 0 0 0 300,580 Z" fill="#f7d8e6"/>
+
+        <!-- Inner Quadrants -->
+        <path d="M 300,300 L 300,180 A 120 120 0 0 0 180,300 Z" fill="#7ccdf2"/>
+        <path d="M 300,300 L 300,180 A 120 120 0 0 1 420,300 Z" fill="#9ccb64"/>
+        <path d="M 300,300 L 420,300 A 120 120 0 0 1 300,420 Z" fill="#fbb35a"/>
+        <path d="M 300,300 L 180,300 A 120 120 0 0 0 300,420 Z" fill="#e895b9"/>
+        
+        <!-- Spokes -->
+        <g stroke="#222" stroke-width="2">
+            <line x1="300" y1="20" x2="300" y2="580"/>
+            <line x1="20" y1="300" x2="580" y2="300"/>
+            <line x1="420" y1="300" x2="515" y2="300" transform="rotate(30, 300, 300)"/>
+            <line x1="420" y1="300" x2="515" y2="300" transform="rotate(60, 300, 300)"/>
+            <line x1="420" y1="300" x2="515" y2="300" transform="rotate(120, 300, 300)"/>
+            <line x1="420" y1="300" x2="515" y2="300" transform="rotate(150, 300, 300)"/>
+            <line x1="420" y1="300" x2="515" y2="300" transform="rotate(210, 300, 300)"/>
+            <line x1="420" y1="300" x2="515" y2="300" transform="rotate(240, 300, 300)"/>
+            <line x1="420" y1="300" x2="515" y2="300" transform="rotate(300, 300, 300)"/>
+            <line x1="420" y1="300" x2="515" y2="300" transform="rotate(330, 300, 300)"/>
+        </g>
+        
+        <!-- Concentric Rings -->
+        <circle cx="300" cy="300" r="280" fill="none" stroke="#222" stroke-width="2"/>
+        <circle cx="300" cy="300" r="215" fill="none" stroke="#222" stroke-width="2"/>
+        <circle cx="300" cy="300" r="120" fill="none" stroke="#222" stroke-width="2"/>
+        
+        <!-- Category Labels -->
+        <text font-family="sans-serif" font-size="28" fill="#222" font-weight="normal">
+            <textPath href="#curve-TL" startOffset="50%" text-anchor="middle">Power (Watts)</textPath>
+        </text>
+        <text font-family="sans-serif" font-size="28" fill="#222" font-weight="normal">
+            <textPath href="#curve-TR" startOffset="50%" text-anchor="middle">Voltage (Volts)</textPath>
+        </text>
+        <text font-family="sans-serif" font-size="28" fill="#222" font-weight="normal">
+            <textPath href="#curve-BR" startOffset="50%" text-anchor="middle">Resistance (Ohms)</textPath>
+        </text>
+        <text font-family="sans-serif" font-size="28" fill="#222" font-weight="normal">
+            <textPath href="#curve-BL" startOffset="50%" text-anchor="middle">Current (Amps)</textPath>
+        </text>
+        
+        <!-- Central Variables -->
+        <text x="240" y="260" font-size="70" font-family="sans-serif" font-weight="normal" text-anchor="middle" fill="#222">P</text>
+        <text x="360" y="260" font-size="70" font-family="sans-serif" font-weight="normal" text-anchor="middle" fill="#222">V</text>
+        <text x="360" y="380" font-size="70" font-family="sans-serif" font-weight="normal" text-anchor="middle" fill="#222">R</text>
+        <text x="240" y="380" font-size="70" font-family="sans-serif" font-weight="normal" text-anchor="middle" fill="#222">I</text>
+        
+        <!-- Units -->
+        <text x="275" y="280" font-size="20" font-family="sans-serif" fill="#222" text-anchor="middle">W</text>
+        <text x="325" y="280" font-size="20" font-family="sans-serif" fill="#222" text-anchor="middle">V</text>
+        <text x="325" y="335" font-size="20" font-family="sans-serif" fill="#222" text-anchor="middle">Ω</text>
+        <text x="275" y="335" font-size="20" font-family="sans-serif" fill="#222" text-anchor="middle">A</text>
+        
+        <!-- Formulas -->
+        <!-- 15 deg (V/I) -->
+        <text x="464" y="338" font-size="26" font-family="sans-serif" font-weight="bold" fill="#222" text-anchor="middle">V</text>
+        <line x1="448" y1="344" x2="480" y2="344" stroke="#222" stroke-width="2"/>
+        <text x="464" y="370" font-size="26" font-family="sans-serif" font-weight="bold" fill="#222" text-anchor="middle">I</text>
+        
+        <!-- 45 deg (V²/P) -->
+        <text x="420" y="414" font-size="26" font-family="sans-serif" font-weight="bold" fill="#222" text-anchor="middle">V<tspan dy="-10" font-size="16">2</tspan></text>
+        <line x1="404" y1="420" x2="436" y2="420" stroke="#222" stroke-width="2"/>
+        <text x="420" y="446" font-size="26" font-family="sans-serif" font-weight="bold" fill="#222" text-anchor="middle">P</text>
+        
+        <!-- 75 deg (P/I²) -->
+        <text x="344" y="458" font-size="26" font-family="sans-serif" font-weight="bold" fill="#222" text-anchor="middle">P</text>
+        <line x1="328" y1="464" x2="360" y2="464" stroke="#222" stroke-width="2"/>
+        <text x="344" y="490" font-size="26" font-family="sans-serif" font-weight="bold" fill="#222" text-anchor="middle">I<tspan dy="-10" font-size="16">2</tspan></text>
+        
+        <!-- 105 deg (V/R) -->
+        <text x="256" y="458" font-size="26" font-family="sans-serif" font-weight="bold" fill="#222" text-anchor="middle">V</text>
+        <line x1="240" y1="464" x2="272" y2="464" stroke="#222" stroke-width="2"/>
+        <text x="256" y="490" font-size="26" font-family="sans-serif" font-weight="bold" fill="#222" text-anchor="middle">R</text>
+        
+        <!-- 135 deg (P/V) -->
+        <text x="180" y="414" font-size="26" font-family="sans-serif" font-weight="bold" fill="#222" text-anchor="middle">P</text>
+        <line x1="164" y1="420" x2="196" y2="420" stroke="#222" stroke-width="2"/>
+        <text x="180" y="446" font-size="26" font-family="sans-serif" font-weight="bold" fill="#222" text-anchor="middle">V</text>
+        
+        <!-- 165 deg (√(P/R)) -->
+        <text x="136" y="352" font-size="26" font-family="sans-serif" font-weight="bold" fill="#222" text-anchor="middle">√(P/R)</text>
+        
+        <!-- 195 deg (V×I) -->
+        <text x="136" y="264" font-size="26" font-family="sans-serif" font-weight="bold" fill="#222" text-anchor="middle">V × I</text>
+        
+        <!-- 225 deg (R×I²) -->
+        <text x="180" y="188" font-size="26" font-family="sans-serif" font-weight="bold" fill="#222" text-anchor="middle">R × I<tspan dy="-10" font-size="16">2</tspan></text>
+        
+        <!-- 255 deg (V²/R) -->
+        <text x="256" y="130" font-size="26" font-family="sans-serif" font-weight="bold" fill="#222" text-anchor="middle">V<tspan dy="-10" font-size="16">2</tspan></text>
+        <line x1="240" y1="136" x2="272" y2="136" stroke="#222" stroke-width="2"/>
+        <text x="256" y="162" font-size="26" font-family="sans-serif" font-weight="bold" fill="#222" text-anchor="middle">R</text>
+        
+        <!-- 285 deg (R×I) -->
+        <text x="344" y="144" font-size="26" font-family="sans-serif" font-weight="bold" fill="#222" text-anchor="middle">R × I</text>
+        
+        <!-- 315 deg (P/I) -->
+        <text x="420" y="174" font-size="26" font-family="sans-serif" font-weight="bold" fill="#222" text-anchor="middle">P</text>
+        <line x1="404" y1="180" x2="436" y2="180" stroke="#222" stroke-width="2"/>
+        <text x="420" y="206" font-size="26" font-family="sans-serif" font-weight="bold" fill="#222" text-anchor="middle">I</text>
+        
+        <!-- 345 deg (√(P×R)) -->
+        <text x="464" y="264" font-size="26" font-family="sans-serif" font-weight="bold" fill="#222" text-anchor="middle">√(P × R)</text>
+    </svg>
+</div>`;
+            } else if (currentSection === "Heat Energy") {
+                sectionGraphic = `<div style="text-align: center; margin: 15px 0;">
+    <svg viewBox="0 0 600 600" style="max-width:600px; width:100%; height:auto; background:#fff; border-radius:8px; padding:10px; border:1px solid #ddd;">
+        <defs>
+            <linearGradient id="water-grad" x1="0" y1="1" x2="0" y2="0">
+                <stop offset="0%" stop-color="#cc33ff"/>
+                <stop offset="30%" stop-color="#ff66ff"/>
+                <stop offset="100%" stop-color="#66ccff"/>
+            </linearGradient>
+            <linearGradient id="handle-grad" x1="0" y1="0" x2="1" y2="0">
+                <stop offset="0%" stop-color="#111"/>
+                <stop offset="15%" stop-color="#e74c3c"/>
+                <stop offset="35%" stop-color="#fff"/>
+                <stop offset="100%" stop-color="#fff"/>
+            </linearGradient>
+            <marker id="arrow-red" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+                <path d="M 0 0 L 10 5 L 0 10 Z" fill="#ff4d4d"/>
+            </marker>
+            <marker id="arrow-black" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto">
+                <path d="M 0 0 L 10 5 L 0 10 Z" fill="#000"/>
+            </marker>
+            <g id="rad-arrow">
+                <path d="M 0,0 Q 7,-10 15,0 T 30,0 T 45,0 T 60,0 T 75,0 T 90,0 L 95,0" fill="none" stroke="#ff4d4d" stroke-width="3" marker-end="url(#arrow-red)"/>
+            </g>
+        </defs>
+        
+        <text x="300" y="70" font-family="'Comic Sans MS', cursive, sans-serif" font-size="44" font-weight="bold" fill="#000" text-anchor="middle">Heat Transfer</text>
+        
+        <!-- Handle (Conduction) -->
+        <rect x="410" y="270" width="140" height="28" rx="14" ry="14" fill="url(#handle-grad)" stroke="#000" stroke-width="4"/>
+        
+        <!-- Water -->
+        <path d="M 183,280 Q 210,265 240,280 T 300,280 T 360,280 T 417,280 L 417,370 Q 417,377 400,377 L 200,377 Q 183,377 183,370 Z" fill="url(#water-grad)"/>
+        
+        <!-- Convection Arrows -->
+        <path d="M 230,290 C 200,290 190,320 200,350" fill="none" stroke="#000" stroke-width="2" marker-end="url(#arrow-black)"/>
+        <path d="M 370,290 C 400,290 410,320 400,350" fill="none" stroke="#000" stroke-width="2" marker-end="url(#arrow-black)"/>
+        <path d="M 240,360 C 260,335 220,315 245,290" fill="none" stroke="#000" stroke-width="2" marker-end="url(#arrow-black)"/>
+        <path d="M 280,350 C 260,325 300,305 285,280" fill="none" stroke="#000" stroke-width="2" marker-end="url(#arrow-black)"/>
+        <path d="M 320,360 C 340,335 300,315 325,290" fill="none" stroke="#000" stroke-width="2" marker-end="url(#arrow-black)"/>
+        <path d="M 360,350 C 340,325 380,305 365,280" fill="none" stroke="#000" stroke-width="2" marker-end="url(#arrow-black)"/>
+        
+        <!-- Bubbles -->
+        <g fill="#0077b3" opacity="0.6">
+            <circle cx="210" cy="360" r="4"/>
+            <circle cx="230" cy="330" r="3"/>
+            <circle cx="200" cy="290" r="4.5"/>
+            <circle cx="260" cy="350" r="3"/>
+            <circle cx="280" cy="310" r="5"/>
+            <circle cx="330" cy="360" r="4"/>
+            <circle cx="310" cy="320" r="3.5"/>
+            <circle cx="360" cy="290" r="4"/>
+            <circle cx="380" cy="350" r="4.5"/>
+            <circle cx="400" cy="310" r="3"/>
+        </g>
+        <g fill="#00b3b3" opacity="0.7">
+            <circle cx="250" cy="370" r="4"/>
+            <circle cx="270" cy="290" r="3"/>
+            <circle cx="350" cy="370" r="4"/>
+            <circle cx="340" cy="300" r="3.5"/>
+            <circle cx="390" cy="340" r="4"/>
+            <circle cx="220" cy="310" r="4"/>
+        </g>
+        
+        <!-- Pot Body & Lip -->
+        <path d="M 180, 255 L 180, 360 Q 180, 380 200, 380 L 400, 380 Q 420, 380 420, 360 L 420, 255" fill="none" stroke="#000" stroke-width="5"/>
+        <rect x="170" y="240" width="260" height="15" rx="5" ry="5" fill="#fff" stroke="#000" stroke-width="5"/>
+        
+        <!-- Flame (Heat Source) -->
+        <g transform="translate(300, 480) scale(1.1)">
+            <path d="M 0,70 C -40,70 -60,30 -30,10 Q -20,30 -10,-5 Q -10,-30 0,-55 Q 10,-30 10,-5 Q 20,30 30,10 C 60,30 40,70 0,70 Z" fill="#ff4d4d" stroke="#000" stroke-width="3" stroke-linejoin="round"/>
+            <path d="M 0,55 C -20,55 -30,30 -15,15 Q -10,25 -5,5 Q -5,-5 0,-20 Q 5,-5 5,5 Q 10,25 15,15 C 30,30 20,55 0,55 Z" fill="#ffb347" stroke="#000" stroke-width="2" stroke-linejoin="round"/>
+        </g>
+        
+        <!-- Radiation Arrows -->
+        <use href="#rad-arrow" transform="translate(300, 490) rotate(-135) translate(70, 0)"/>
+        <use href="#rad-arrow" transform="translate(300, 490) rotate(-170) translate(70, 0)"/>
+        <use href="#rad-arrow" transform="translate(300, 490) rotate(150) translate(70, 0)"/>
+        
+        <use href="#rad-arrow" transform="translate(300, 490) rotate(-45) translate(70, 0)"/>
+        <use href="#rad-arrow" transform="translate(300, 490) rotate(-10) translate(70, 0)"/>
+        <use href="#rad-arrow" transform="translate(300, 490) rotate(30) translate(70, 0)"/>
+        
+        <!-- Leader Lines -->
+        <line x1="120" y1="210" x2="190" y2="300" stroke="#7f8c8d" stroke-width="2"/>
+        <line x1="480" y1="210" x2="435" y2="275" stroke="#7f8c8d" stroke-width="2"/>
+        <line x1="480" y1="390" x2="380" y2="460" stroke="#7f8c8d" stroke-width="2"/>
+        
+        <!-- Labels -->
+        <text x="120" y="200" font-family="'Comic Sans MS', cursive, sans-serif" font-size="32" font-weight="bold" fill="#000" text-anchor="middle">Convection</text>
+        <text x="480" y="200" font-family="'Comic Sans MS', cursive, sans-serif" font-size="32" font-weight="bold" fill="#000" text-anchor="middle">Conduction</text>
+        <text x="480" y="380" font-family="'Comic Sans MS', cursive, sans-serif" font-size="32" font-weight="bold" fill="#000" text-anchor="middle">Radiation</text>
+    </svg>
+</div>`;
+            } else if (currentSection === "Reflection of light") {
+                sectionGraphic = `<div style="text-align: center; margin: 15px 0;">
+    <svg viewBox="0 0 500 300" style="max-width:500px; width:100%; height:auto; background:#fff; border-radius:8px; padding:10px; border:1px solid #ddd;">
+        <defs>
+            <marker id="arr-blue" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#0088cc"/></marker>
+        </defs>
+        
+        <!-- Surface -->
+        <rect x="25" y="240" width="450" height="20" fill="#aaddff" stroke="#6699cc" stroke-width="2"/>
+        
+        <!-- Normal -->
+        <line x1="250" y1="50" x2="250" y2="240" stroke="#000" stroke-width="2" stroke-dasharray="8,6"/>
+        <text x="250" y="30" text-anchor="middle" font-family="serif" font-size="22" fill="#333">Normal</text>
+        <text x="250" y="55" text-anchor="middle" font-family="serif" font-size="22" fill="#333">direction</text>
+        
+        <!-- Right Angle Box -->
+        <polyline points="250,225 265,225 265,240" fill="none" stroke="#000" stroke-width="1.5"/>
+        
+        <!-- Incident Ray -->
+        <line x1="100" y1="100" x2="175" y2="170" stroke="#0088cc" stroke-width="3" marker-end="url(#arr-blue)"/>
+        <line x1="175" y1="170" x2="250" y2="240" stroke="#0088cc" stroke-width="3"/>
+        <text x="120" y="80" text-anchor="middle" font-family="serif" font-size="22" fill="#333">Incident</text>
+        <text x="120" y="105" text-anchor="middle" font-family="serif" font-size="22" fill="#333">ray</text>
+        
+        <!-- Reflected Ray -->
+        <line x1="250" y1="240" x2="325" y2="170" stroke="#0088cc" stroke-width="3" marker-end="url(#arr-blue)"/>
+        <line x1="325" y1="170" x2="400" y2="100" stroke="#0088cc" stroke-width="3"/>
+        <text x="380" y="80" text-anchor="middle" font-family="serif" font-size="22" fill="#333">Reflected</text>
+        <text x="380" y="105" text-anchor="middle" font-family="serif" font-size="22" fill="#333">ray</text>
+        
+        <!-- Angles -->
+        <path d="M 250,180 A 60 60 0 0 0 206,199" fill="none" stroke="#000" stroke-width="1.5"/>
+        <text x="225" y="195" font-family="serif" font-size="22" font-style="italic" fill="#000">i</text>
+        
+        <path d="M 250,180 A 60 60 0 0 1 294,199" fill="none" stroke="#000" stroke-width="1.5"/>
+        <text x="265" y="195" font-family="serif" font-size="22" font-style="italic" fill="#000">r</text>
+        
+        <!-- Equation -->
+        <text x="380" y="200" font-family="serif" font-size="24" font-style="italic" fill="#000">i = r</text>
+    </svg>
+</div>`;
+            } else if (currentSection === "Pinhole Camera") {
+                sectionGraphic = `<div style="text-align: center; margin: 15px 0;">
+    <!-- Pinhole Camera -->
+    <svg viewBox="0 0 800 320" style="max-width:800px; width:100%; height:auto; background:#fff; border-radius:8px; padding:10px; border:1px solid #ddd;">
+        <defs>
+            <marker id="arr-ray" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+                <path d="M 0 0 L 10 5 L 0 10 Z" fill="#000"/>
+            </marker>
+            <g id="tree">
+                <!-- trunk -->
+                <path d="M -5,0 L 5,0 L 3,-70 L -3,-70 Z" fill="#5c4033"/>
+                <!-- leaves -->
+                <circle cx="0" cy="-110" r="40" fill="#2ca02c"/>
+                <circle cx="-25" cy="-80" r="30" fill="#2ca02c"/>
+                <circle cx="25" cy="-80" r="30" fill="#2ca02c"/>
+                <circle cx="-20" cy="-140" r="25" fill="#2ca02c"/>
+                <circle cx="20" cy="-140" r="25" fill="#2ca02c"/>
+                <circle cx="0" cy="-170" r="20" fill="#2ca02c"/>
+            </g>
+        </defs>
+        
+        <!-- Camera Box -->
+        <path d="M 350,145 L 350,30 L 100,30 L 100,270 L 350,270 L 350,155" fill="none" stroke="#333" stroke-width="3"/>
+        
+        <!-- Object Tree -->
+        <use href="#tree" transform="translate(650, 240)"/>
+        
+        <!-- Image Tree -->
+        <use href="#tree" transform="translate(100, 75) scale(-0.83333, -0.83333)"/>
+        
+        <!-- Rays -->
+        <!-- Top to bottom -->
+        <line x1="650" y1="60" x2="500" y2="105" stroke="#000" stroke-width="1.5" marker-end="url(#arr-ray)"/>
+        <line x1="500" y1="105" x2="350" y2="150" stroke="#000" stroke-width="1.5"/>
+        <line x1="350" y1="150" x2="225" y2="187.5" stroke="#000" stroke-width="1.5" marker-end="url(#arr-ray)"/>
+        <line x1="225" y1="187.5" x2="100" y2="225" stroke="#000" stroke-width="1.5"/>
+        
+        <!-- Bottom to top -->
+        <line x1="650" y1="240" x2="500" y2="195" stroke="#000" stroke-width="1.5" marker-end="url(#arr-ray)"/>
+        <line x1="500" y1="195" x2="350" y2="150" stroke="#000" stroke-width="1.5"/>
+        <line x1="350" y1="150" x2="225" y2="112.5" stroke="#000" stroke-width="1.5" marker-end="url(#arr-ray)"/>
+        <line x1="225" y1="112.5" x2="100" y2="75" stroke="#000" stroke-width="1.5"/>
+        
+        <!-- d_o dimension -->
+        <line x1="350" y1="15" x2="350" y2="25" stroke="#000" stroke-width="1.5"/>
+        <line x1="650" y1="15" x2="650" y2="25" stroke="#000" stroke-width="1.5"/>
+        <line x1="480" y1="20" x2="350" y2="20" stroke="#000" stroke-width="1.5" marker-end="url(#arr-ray)"/>
+        <line x1="520" y1="20" x2="650" y2="20" stroke="#000" stroke-width="1.5" marker-end="url(#arr-ray)"/>
+        <text x="500" y="27" text-anchor="middle" font-family="serif" font-style="italic" font-size="24" fill="#000">d<tspan font-style="normal" font-size="16" dy="5">o</tspan></text>
+        
+        <!-- d_i dimension -->
+        <line x1="100" y1="285" x2="100" y2="295" stroke="#000" stroke-width="1.5"/>
+        <line x1="350" y1="285" x2="350" y2="295" stroke="#000" stroke-width="1.5"/>
+        <line x1="190" y1="290" x2="100" y2="290" stroke="#000" stroke-width="1.5" marker-end="url(#arr-ray)"/>
+        <line x1="260" y1="290" x2="350" y2="290" stroke="#000" stroke-width="1.5" marker-end="url(#arr-ray)"/>
+        <text x="225" y="297" text-anchor="middle" font-family="serif" font-style="italic" font-size="24" fill="#000">d<tspan font-style="normal" font-size="16" dy="5">i</tspan></text>
+        
+        <!-- Height labels -->
+        <text x="730" y="155" text-anchor="middle" font-family="serif" font-style="italic" font-size="30" fill="#000">h<tspan font-style="normal" font-size="20" dy="5">o</tspan></text>
+        <text x="50" y="155" text-anchor="middle" font-family="serif" font-style="italic" font-size="30" fill="#000">h<tspan font-style="normal" font-size="20" dy="5">i</tspan></text>
+        
+        <!-- Vertex Labels -->
+        <text x="650" y="45" text-anchor="middle" font-family="serif" font-size="20" fill="#333">B</text>
+        <text x="665" y="250" text-anchor="middle" font-family="serif" font-size="20" fill="#333">O</text>
+        <text x="80" y="80" text-anchor="middle" font-family="serif" font-size="20" fill="#333">I</text>
+        <text x="80" y="230" text-anchor="middle" font-family="serif" font-size="20" fill="#333">M</text>
+    </svg>
+</div>`;
+            } else if (currentSection === "Refraction of light") {
+                sectionGraphic = `<div style="text-align: center; margin: 15px 0;">
+    <svg viewBox="0 0 400 350" style="max-width:400px; width:100%; height:auto; background:#fff; border-radius:8px; padding:10px; border:1px solid #ddd;">
+        <defs>
+            <marker id="arr-blue" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#0088cc"/></marker>
+        </defs>
+        
+        <!-- Bottom Medium (n2) -->
+        <rect x="20" y="175" width="360" height="150" fill="#cceeff" stroke="#6699cc" stroke-width="2"/>
+        
+        <!-- Normal -->
+        <line x1="200" y1="20" x2="200" y2="330" stroke="#000" stroke-width="2" stroke-dasharray="8,6"/>
+        
+        <!-- Incident Ray (n1) -->
+        <line x1="80" y1="35" x2="140" y2="105" stroke="#0088cc" stroke-width="3" marker-end="url(#arr-blue)"/>
+        <line x1="140" y1="105" x2="200" y2="175" stroke="#0088cc" stroke-width="3"/>
+        
+        <!-- Refracted Ray (n2) -->
+        <line x1="200" y1="175" x2="230" y2="245" stroke="#0088cc" stroke-width="3" marker-end="url(#arr-blue)"/>
+        <line x1="230" y1="245" x2="260" y2="315" stroke="#0088cc" stroke-width="3"/>
+        
+        <!-- Labels -->
+        <text x="40" y="150" font-family="serif" font-size="26" font-style="italic" fill="#333">n<tspan font-style="normal" font-size="18" dy="5">1</tspan></text>
+        <text x="40" y="210" font-family="serif" font-size="26" font-style="italic" fill="#333">n<tspan font-style="normal" font-size="18" dy="5">2</tspan></text>
+        
+        <!-- Angle i -->
+        <path d="M 200,120 A 55 55 0 0 1 164,133" fill="none" stroke="#000" stroke-width="1.5"/>
+        <text x="180" y="115" font-family="serif" font-size="22" font-style="italic" fill="#000">i</text>
+        
+        <!-- Angle r -->
+        <path d="M 200,250 A 75 75 0 0 1 230,244" fill="none" stroke="#000" stroke-width="1.5"/>
+        <text x="212" y="265" font-family="serif" font-size="22" font-style="italic" fill="#000">r</text>
+    </svg>
+</div>`;
+            } else if (currentSection === "Magnetic Field & Force") {
+                sectionGraphic = `<div style="display: flex; flex-direction: column; gap: 30px; margin: 20px 0; align-items: center;">
+    <!-- SVG 1: Straight Wire -->
+    <svg viewBox="0 -30 640 380" style="max-width:640px; width:100%; height:auto; background:#fff; border-radius:8px; border:1px solid #ddd; padding: 10px;">
+        <defs>
+            <marker id="arr-blk" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#000"/></marker>
+            <marker id="arr-green" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#8bc34a"/></marker>
+        </defs>
+        
+        <!-- Left Diagram -->
+        <text x="20" y="140" font-family="sans-serif" font-size="28" font-weight="bold" fill="#1b3b5c">Distance from</text>
+        <text x="20" y="175" font-family="sans-serif" font-size="28" font-weight="bold" fill="#1b3b5c">wire to point M</text>
+        <line x1="250" y1="155" x2="360" y2="155" stroke="#9ccc65" stroke-width="3" marker-end="url(#arr-green)"/>
+        
+        <!-- Lower Wire -->
+        <rect x="391" y="150" width="14" height="150" fill="#aab7c4" rx="7"/>
+        <!-- Plane -->
+        <polygon points="240,200 360,100 620,100 500,200" fill="#d4f1f9" stroke="#63c4e8" stroke-width="2" opacity="0.8"/>
+        
+        <!-- B-Field Circles (Ellipses) -->
+        <g stroke="#d63031" stroke-width="2" fill="none">
+            <ellipse cx="398" cy="150" rx="30" ry="12"/>
+            <ellipse cx="398" cy="150" rx="55" ry="22"/>
+            <ellipse cx="398" cy="150" rx="80" ry="32"/>
+            <ellipse cx="398" cy="150" rx="105" ry="42"/>
+        </g>
+        
+        <!-- Upper Wire -->
+        <rect x="391" y="0" width="14" height="150" fill="#aab7c4" rx="7"/>
+        
+        <!-- Current Arrow (Left) -->
+        <line x1="398" y1="80" x2="398" y2="0" stroke="#6c5ce7" stroke-width="4"/>
+        <polygon points="398,-10 388,10 408,10" fill="#6c5ce7"/>
+        <text x="415" y="45" font-family="serif" font-size="24" font-style="italic" font-weight="bold" fill="#000">I</text>
+        
+        <!-- Distance d and Point M -->
+        <line x1="398" y1="150" x2="478" y2="182" stroke="#000" stroke-width="2"/>
+        <circle cx="478" cy="182" r="5" fill="#000"/>
+        <text x="440" y="160" font-family="serif" font-size="26" font-weight="bold" fill="#d63031">d</text>
+        <text x="488" y="195" font-family="serif" font-size="24" font-style="italic" font-weight="bold" fill="#000">M</text>
+    </svg>
+
+    <!-- SVG 2: Solenoid Infographic -->
+    <svg viewBox="0 0 1000 700" style="max-width:1000px; width:100%; height:auto; background:#fff; border-radius:8px; border:1px solid #ddd; padding: 10px; margin: 20px 0;">
+        <defs>
+            <marker id="arr-blue-left" viewBox="0 0 10 10" refX="2" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 10 0 L 0 5 L 10 10 Z" fill="#3498db"/></marker>
+            <marker id="arr-blue-right" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#3498db"/></marker>
+            <marker id="arr-red-up" viewBox="0 0 10 10" refX="5" refY="2" markerWidth="6" markerHeight="6" orient="auto"><path d="M 0 10 L 5 0 L 10 10 Z" fill="#d63031"/></marker>
+            <marker id="arr-red-down" viewBox="0 0 10 10" refX="5" refY="8" markerWidth="6" markerHeight="6" orient="auto"><path d="M 0 0 L 10 0 L 5 10 Z" fill="#d63031"/></marker>
+            <marker id="arr-red-right" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#d63031"/></marker>
+            <marker id="arr-blk" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#000"/></marker>
+        </defs>
+
+        <!-- Titles -->
+        <text x="375" y="40" text-anchor="middle" font-family="serif" font-size="36" font-weight="bold" fill="#004d80">Solenoid</text>
+        <text x="375" y="70" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#333">A coil of wire that produces a nearly uniform magnetic field</text>
+        <text x="375" y="90" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#333">inside when an electric current flows through it.</text>
+
+        <!-- Right Panel (Key Points) -->
+        <rect x="710" y="80" width="270" height="590" fill="#f4f9fb" stroke="#a9cce3" stroke-width="2" rx="10"/>
+        <text x="730" y="115" font-family="sans-serif" font-size="20" font-weight="bold" fill="#004d80">Key Points</text>
+        
+        <circle cx="735" cy="145" r="4" fill="#333"/>
+        <text x="750" y="150" font-family="sans-serif" font-size="14" fill="#333">The magnetic field inside a</text>
+        <text x="750" y="170" font-family="sans-serif" font-size="14" fill="#333">long solenoid is strong and</text>
+        <text x="750" y="190" font-family="sans-serif" font-size="14" fill="#333">nearly uniform.</text>
+
+        <circle cx="735" cy="225" r="4" fill="#333"/>
+        <text x="750" y="230" font-family="sans-serif" font-size="14" fill="#333">The field outside is weaker</text>
+        <text x="750" y="250" font-family="sans-serif" font-size="14" fill="#333">and forms closed loops.</text>
+
+        <circle cx="735" cy="285" r="4" fill="#333"/>
+        <text x="750" y="290" font-family="sans-serif" font-size="14" fill="#333">The direction of the magnetic</text>
+        <text x="750" y="310" font-family="sans-serif" font-size="14" fill="#333">field (and the N/S poles) is</text>
+        <text x="750" y="330" font-family="sans-serif" font-size="14" fill="#333">determined by the right-hand rule.</text>
+
+        <!-- Mini Right-Hand Graphic removed as requested -->
+
+        <!-- Main Diagram Magnetic Field Lines (Blue) -->
+        <!-- Outer Loops Top -->
+        <path d="M 120,230 C -50,230 -50,110 350,110 C 750,110 750,230 580,230 L 120,230" fill="none" stroke="#3498db" stroke-width="2"/>
+        <polygon points="350,110 340,105 340,115" fill="#3498db"/>
+        <path d="M 140,240 C -10,240 -10,140 350,140 C 710,140 710,240 560,240 L 140,240" fill="none" stroke="#3498db" stroke-width="2"/>
+        <polygon points="350,140 340,135 340,145" fill="#3498db"/>
+        
+        <!-- Outer Loops Bottom -->
+        <path d="M 120,270 C -50,270 -50,390 350,390 C 750,390 750,270 580,270 L 120,270" fill="none" stroke="#3498db" stroke-width="2"/>
+        <polygon points="350,390 340,385 340,395" fill="#3498db"/>
+        <path d="M 140,260 C -10,260 -10,360 350,360 C 710,360 710,260 560,260 L 140,260" fill="none" stroke="#3498db" stroke-width="2"/>
+        <polygon points="350,360 340,355 340,365" fill="#3498db"/>
+
+        <!-- Center Straight Line -->
+        <line x1="50" y1="250" x2="650" y2="250" stroke="#3498db" stroke-width="2"/>
+        
+        <!-- Inner Field Arrows (Left Pointing) -->
+        <polygon points="340,250 350,245 350,255" fill="#3498db"/>
+        <polygon points="340,240 350,235 350,245" fill="#3498db"/>
+        <polygon points="340,260 350,255 350,265" fill="#3498db"/>
+        <polygon points="340,230 350,225 350,235" fill="#3498db"/>
+        <polygon points="340,270 350,265 350,275" fill="#3498db"/>
+
+        <!-- Solenoid Coil Background (Dark Copper) -->
+        <path d="M 180,310 C 170,310 170,190 190,190 M 200,310 C 190,310 190,190 210,190 M 220,310 C 210,310 210,190 230,190 M 240,310 C 230,310 230,190 250,190 M 260,310 C 250,310 250,190 270,190 M 280,310 C 270,310 270,190 290,190 M 300,310 C 290,310 290,190 310,190 M 320,310 C 310,310 310,190 330,190 M 340,310 C 330,310 330,190 350,190 M 360,310 C 350,310 350,190 370,190 M 380,310 C 370,310 370,190 390,190 M 400,310 C 390,310 390,190 410,190 M 420,310 C 410,310 410,190 430,190 M 440,310 C 430,310 430,190 450,190 M 460,310 C 450,310 450,190 470,190 M 480,310 C 470,310 470,190 490,190 M 500,310 C 490,310 490,190 510,190 M 520,310 C 510,310 510,190 530,190" fill="none" stroke="#a04000" stroke-width="6" stroke-linecap="round"/>
+
+        <!-- Solenoid Coil Foreground (Bright Copper) -->
+        <path d="M 190,190 C 210,190 210,310 200,310 M 210,190 C 230,190 230,310 220,310 M 230,190 C 250,190 250,310 240,310 M 250,190 C 270,190 270,310 260,310 M 270,190 C 290,190 290,310 280,310 M 290,190 C 310,190 310,310 300,310 M 310,190 C 330,190 330,310 320,310 M 330,190 C 350,190 350,310 340,310 M 350,190 C 370,190 370,310 360,310 M 370,190 C 390,190 390,310 380,310 M 390,190 C 410,190 410,310 400,310 M 410,190 C 430,190 430,310 420,310 M 430,190 C 450,190 450,310 440,310 M 450,190 C 470,190 470,310 460,310 M 470,190 C 490,190 490,310 480,310 M 490,190 C 510,190 510,310 500,310 M 510,190 C 530,190 530,310 520,310" fill="none" stroke="#d35400" stroke-width="6" stroke-linecap="round"/>
+
+        <!-- Current Direction Arrows on Coil (Blue pointing UP) -->
+        <polygon points="200,240 195,255 205,255" fill="#1f618d"/>
+        <polygon points="240,240 235,255 245,255" fill="#1f618d"/>
+        <polygon points="280,240 275,255 285,255" fill="#1f618d"/>
+        <polygon points="320,240 315,255 325,255" fill="#1f618d"/>
+        <polygon points="360,240 355,255 365,255" fill="#1f618d"/>
+        <polygon points="400,240 395,255 405,255" fill="#1f618d"/>
+        <polygon points="440,240 435,255 445,255" fill="#1f618d"/>
+        <polygon points="480,240 475,255 485,255" fill="#1f618d"/>
+
+        <!-- Connecting Wires to Battery -->
+        <line x1="180" y1="420" x2="180" y2="310" stroke="#d35400" stroke-width="6"/>
+        <polygon points="180,335 172,350 188,350" fill="#d63031"/>
+        <text x="155" y="360" font-family="serif" font-size="24" font-style="italic" font-weight="bold" fill="#d63031">I</text>
+
+        <line x1="520" y1="310" x2="520" y2="420" stroke="#d35400" stroke-width="6"/>
+        <polygon points="520,380 512,365 528,365" fill="#d63031"/>
+        <text x="535" y="375" font-family="serif" font-size="24" font-style="italic" font-weight="bold" fill="#d63031">I</text>
+
+        <!-- Circuit and Battery -->
+        <line x1="180" y1="420" x2="310" y2="420" stroke="#000" stroke-width="3"/>
+        <line x1="390" y1="420" x2="520" y2="420" stroke="#000" stroke-width="3"/>
+        
+        <!-- Battery Symbol -->
+        <rect x="310" y="390" width="2" height="60" fill="#000"/> <!-- Positive (Left) -->
+        <rect x="330" y="405" width="8" height="30" fill="#000"/> <!-- Negative -->
+        <line x1="340" y1="420" x2="350" y2="420" stroke="#000" stroke-width="2"/>
+        <rect x="350" y="390" width="2" height="60" fill="#000"/> <!-- Positive -->
+        <rect x="370" y="405" width="8" height="30" fill="#000"/> <!-- Negative (Right) -->
+        <line x1="380" y1="420" x2="390" y2="420" stroke="#000" stroke-width="2"/>
+
+        <text x="290" y="415" font-family="sans-serif" font-size="24" font-weight="bold" fill="#000">+</text>
+        <text x="395" y="415" font-family="sans-serif" font-size="28" font-weight="bold" fill="#000">-</text>
+        <text x="350" y="470" text-anchor="middle" font-family="sans-serif" font-size="16" font-weight="bold" fill="#333">DC power supply</text>
+
+        <!-- N and S Poles -->
+        <text x="60" y="270" font-family="sans-serif" font-size="60" font-weight="bold" fill="#d63031">N</text>
+        <text x="600" y="270" font-family="sans-serif" font-size="60" font-weight="bold" fill="#1f618d">S</text>
+
+        <!-- Labels and Pointers -->
+        <!-- Magnetic field lines -->
+        <text x="100" y="100" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#333">Magnetic field lines</text>
+        <line x1="100" y1="110" x2="130" y2="150" stroke="#000" stroke-width="1.5" marker-end="url(#arr-blk)"/>
+        
+        <!-- Inside uniform field -->
+        <text x="350" y="115" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#333">Inside: nearly uniform</text>
+        <text x="350" y="135" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#333">magnetic field</text>
+        <line x1="350" y1="145" x2="350" y2="210" stroke="#000" stroke-width="1.5" marker-end="url(#arr-blk)"/>
+
+        <!-- Solenoid (coil of wire) -->
+        <text x="560" y="120" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#333">Solenoid (coil of wire)</text>
+        <line x1="560" y1="130" x2="490" y2="185" stroke="#000" stroke-width="1.5" marker-end="url(#arr-blk)"/>
+
+        <!-- Bottom Panels -->
+        <!-- Left Panel: N -->
+        <rect x="40" y="530" width="300" height="150" fill="#f4f9fb" stroke="#a9cce3" stroke-width="2" rx="10"/>
+        <text x="190" y="555" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#1f618d">View from the end (looking at the left end)</text>
+        <circle cx="110" cy="625" r="45" fill="none" stroke="#1f618d" stroke-width="2"/>
+        <text x="110" y="640" text-anchor="middle" font-family="sans-serif" font-size="40" font-weight="bold" fill="#d63031">N</text>
+        <circle cx="110" cy="570" r="6" fill="#fff" stroke="#1f618d" stroke-width="2"/><circle cx="110" cy="570" r="2.5" fill="#1f618d"/>
+        <circle cx="149" cy="586" r="6" fill="#fff" stroke="#1f618d" stroke-width="2"/><circle cx="149" cy="586" r="2.5" fill="#1f618d"/>
+        <circle cx="165" cy="625" r="6" fill="#fff" stroke="#1f618d" stroke-width="2"/><circle cx="165" cy="625" r="2.5" fill="#1f618d"/>
+        <circle cx="149" cy="664" r="6" fill="#fff" stroke="#1f618d" stroke-width="2"/><circle cx="149" cy="664" r="2.5" fill="#1f618d"/>
+        <circle cx="110" cy="680" r="6" fill="#fff" stroke="#1f618d" stroke-width="2"/><circle cx="110" cy="680" r="2.5" fill="#1f618d"/>
+        <circle cx="71" cy="664" r="6" fill="#fff" stroke="#1f618d" stroke-width="2"/><circle cx="71" cy="664" r="2.5" fill="#1f618d"/>
+        <circle cx="55" cy="625" r="6" fill="#fff" stroke="#1f618d" stroke-width="2"/><circle cx="55" cy="625" r="2.5" fill="#1f618d"/>
+        <circle cx="71" cy="586" r="6" fill="#fff" stroke="#1f618d" stroke-width="2"/><circle cx="71" cy="586" r="2.5" fill="#1f618d"/>
+        <text x="190" y="605" font-family="sans-serif" font-size="14" fill="#333">Current coming</text>
+        <text x="190" y="625" font-family="sans-serif" font-size="14" fill="#333">out of the page</text>
+        <text x="190" y="645" font-family="sans-serif" font-size="14" fill="#333">( • ) → North pole</text>
+
+        <!-- Right Panel: S -->
+        <rect x="360" y="530" width="330" height="150" fill="#f4f9fb" stroke="#a9cce3" stroke-width="2" rx="10"/>
+        <text x="525" y="555" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#1f618d">View from the other end (right end)</text>
+        <circle cx="450" cy="625" r="45" fill="none" stroke="#1f618d" stroke-width="2"/>
+        <text x="450" y="640" text-anchor="middle" font-family="sans-serif" font-size="40" font-weight="bold" fill="#1f618d">S</text>
+        <g stroke="#1f618d" stroke-width="2">
+            <circle cx="450" cy="570" r="6" fill="#fff"/><path d="M 447,567 L 453,573 M 447,573 L 453,567"/>
+            <circle cx="489" cy="586" r="6" fill="#fff"/><path d="M 486,583 L 492,589 M 486,589 L 492,583"/>
+            <circle cx="505" cy="625" r="6" fill="#fff"/><path d="M 502,622 L 508,628 M 502,628 L 508,622"/>
+            <circle cx="489" cy="664" r="6" fill="#fff"/><path d="M 486,661 L 492,667 M 486,667 L 492,661"/>
+            <circle cx="450" cy="680" r="6" fill="#fff"/><path d="M 447,677 L 453,683 M 447,683 L 453,677"/>
+            <circle cx="411" cy="664" r="6" fill="#fff"/><path d="M 408,661 L 414,667 M 408,667 L 414,661"/>
+            <circle cx="395" cy="625" r="6" fill="#fff"/><path d="M 392,622 L 398,628 M 392,628 L 398,622"/>
+            <circle cx="411" cy="586" r="6" fill="#fff"/><path d="M 408,583 L 414,589 M 408,589 L 414,583"/>
+        </g>
+        <text x="530" y="615" font-family="sans-serif" font-size="14" fill="#333">Current going</text>
+        <text x="530" y="635" font-family="sans-serif" font-size="14" fill="#333">into the page</text>
+        <text x="530" y="655" font-family="sans-serif" font-size="14" fill="#333">( × ) → South pole</text>
+    </svg>
+
+    <!-- SVG 3: Wire in Magnetic Field -->
+    <svg viewBox="0 -20 1000 470" style="max-width:1000px; width:100%; height:auto; background:#fff; border-radius:8px; border:1px solid #ddd; padding: 10px;">
+        <defs>
+            <pattern id="b-cross" x="10" y="10" width="25" height="25" patternUnits="userSpaceOnUse">
+                <path d="M 5,5 L 15,15 M 5,15 L 15,5" stroke="#27ae60" stroke-width="2"/>
+            </pattern>
+            <marker id="arr-purp" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#8e44ad"/></marker>
+        </defs>
+        
+        <!-- Panel (a) Isometric Magnet -->
+        <!-- S Pole (Top) -->
+        <polygon points="120,130 180,130 160,160 100,160" fill="#ecf0f1" stroke="#95a5a6" stroke-width="2"/>
+        <!-- N Pole (Bottom) -->
+        <polygon points="120,270 180,270 160,300 100,300" fill="#ecf0f1" stroke="#95a5a6" stroke-width="2"/>
+        <!-- Spine -->
+        <polygon points="120,130 100,160 100,300 120,270" fill="#bdc3c7" stroke="#95a5a6" stroke-width="2"/>
+        
+        <!-- Vertical Wire -->
+        <line x1="140" y1="80" x2="140" y2="350" stroke="#7f8c8d" stroke-width="4"/>
+        
+        <!-- Green B-field Arrows -->
+        <line x1="130" y1="270" x2="130" y2="180" stroke="#27ae60" stroke-width="3" marker-end="url(#arr-green)"/>
+        <line x1="150" y1="270" x2="150" y2="180" stroke="#27ae60" stroke-width="3" marker-end="url(#arr-green)"/>
+        
+        <text x="140" y="152" font-family="serif" font-size="22" font-weight="bold" fill="#2c3e50" text-anchor="middle">S</text>
+        <text x="140" y="292" font-family="serif" font-size="22" font-weight="bold" fill="#2c3e50" text-anchor="middle">N</text>
+
+        <!-- Panel (b) I = 0 -->
+        <rect x="300" y="50" width="200" height="80" fill="#fdfae4" stroke="#d5c898" rx="6"/>
+        <polygon points="390,130 410,130 400,150" fill="#fdfae4" stroke="#d5c898"/>
+        <!-- Hide the border line inside the polygon -->
+        <line x1="391" y1="130" x2="409" y2="130" stroke="#fdfae4" stroke-width="3"/>
+        <text x="320" y="75" font-family="serif" font-size="16" fill="#000">When there is no current</text>
+        <text x="320" y="95" font-family="serif" font-size="16" fill="#000">in the wire, the wire</text>
+        <text x="320" y="115" font-family="serif" font-size="16" fill="#000">remains vertical.</text>
+        
+        <text x="270" y="240" font-family="serif" font-size="22" font-weight="bold" fill="#000">B<tspan font-size="14" dy="5">in</tspan></text>
+        <line x1="260" y1="220" x2="280" y2="220" stroke="#000" stroke-width="2" marker-end="url(#arr-blk)"/>
+
+        <rect x="330" y="170" width="140" height="130" rx="15" fill="#e8f8f5" stroke="#a3e4d7" stroke-width="2"/>
+        <rect x="330" y="170" width="140" height="130" rx="15" fill="url(#b-cross)"/>
+        
+        <!-- Wire -->
+        <line x1="400" y1="145" x2="400" y2="350" stroke="#bdc3c7" stroke-width="6"/>
+        <line x1="400" y1="145" x2="400" y2="350" stroke="#7f8c8d" stroke-width="2"/>
+        <circle cx="400" cy="145" r="3" fill="#000"/>
+        <circle cx="400" cy="350" r="3" fill="#000"/>
+        
+        <text x="380" y="380" font-family="serif" font-style="italic" font-size="22" fill="#000">I = 0</text>
+
+        <!-- Panel (c) I Upward -->
+        <rect x="550" y="50" width="200" height="80" fill="#fdfae4" stroke="#d5c898" rx="6"/>
+        <polygon points="630,130 650,130 640,150" fill="#fdfae4" stroke="#d5c898"/>
+        <line x1="631" y1="130" x2="649" y2="130" stroke="#fdfae4" stroke-width="3"/>
+        <text x="570" y="75" font-family="serif" font-size="16" fill="#000">When the current is</text>
+        <text x="570" y="95" font-family="serif" font-size="16" fill="#000">upward, the wire deflects</text>
+        <text x="570" y="115" font-family="serif" font-size="16" fill="#000">to the left.</text>
+        
+        <text x="520" y="240" font-family="serif" font-size="22" font-weight="bold" fill="#000">B<tspan font-size="14" dy="5">in</tspan></text>
+        <line x1="510" y1="220" x2="530" y2="220" stroke="#000" stroke-width="2" marker-end="url(#arr-blk)"/>
+
+        <rect x="580" y="170" width="140" height="130" rx="15" fill="#e8f8f5" stroke="#a3e4d7" stroke-width="2"/>
+        <rect x="580" y="170" width="140" height="130" rx="15" fill="url(#b-cross)"/>
+        
+        <!-- Original Dashed -->
+        <line x1="650" y1="145" x2="650" y2="350" stroke="#333" stroke-width="2" stroke-dasharray="6,4"/>
+        
+        <!-- Bowed Wire -->
+        <path d="M 650,145 Q 600,247 650,350" stroke="#bdc3c7" stroke-width="6" fill="none"/>
+        <path d="M 650,145 Q 600,247 650,350" stroke="#7f8c8d" stroke-width="2" fill="none"/>
+        <circle cx="650" cy="145" r="3" fill="#000"/>
+        <circle cx="650" cy="350" r="3" fill="#000"/>
+        
+        <!-- Current Arrow (Upward along curve) -->
+        <path d="M 618,290 Q 612,247 618,210" stroke="#8e44ad" stroke-width="4" fill="none" marker-end="url(#arr-purp)"/>
+        <text x="596" y="255" font-family="serif" font-style="italic" font-size="24" font-weight="bold" fill="#8e44ad">I</text>
+
+        <!-- Panel (d) I Downward -->
+        <rect x="800" y="50" width="200" height="80" fill="#fdfae4" stroke="#d5c898" rx="6"/>
+        <polygon points="900,130 920,130 910,150" fill="#fdfae4" stroke="#d5c898"/>
+        <line x1="901" y1="130" x2="919" y2="130" stroke="#fdfae4" stroke-width="3"/>
+        <text x="820" y="75" font-family="serif" font-size="16" fill="#000">When the current is</text>
+        <text x="820" y="95" font-family="serif" font-size="16" fill="#000">downward, the wire deflects</text>
+        <text x="820" y="115" font-family="serif" font-size="16" fill="#000">to the right.</text>
+        
+        <text x="770" y="240" font-family="serif" font-size="22" font-weight="bold" fill="#000">B<tspan font-size="14" dy="5">in</tspan></text>
+        <line x1="760" y1="220" x2="780" y2="220" stroke="#000" stroke-width="2" marker-end="url(#arr-blk)"/>
+
+        <rect x="830" y="170" width="140" height="130" rx="15" fill="#e8f8f5" stroke="#a3e4d7" stroke-width="2"/>
+        <rect x="830" y="170" width="140" height="130" rx="15" fill="url(#b-cross)"/>
+        
+        <!-- Original Dashed -->
+        <line x1="900" y1="145" x2="900" y2="350" stroke="#333" stroke-width="2" stroke-dasharray="6,4"/>
+        
+        <!-- Bowed Wire -->
+        <path d="M 900,145 Q 950,247 900,350" stroke="#bdc3c7" stroke-width="6" fill="none"/>
+        <path d="M 900,145 Q 950,247 900,350" stroke="#7f8c8d" stroke-width="2" fill="none"/>
+        <circle cx="900" cy="145" r="3" fill="#000"/>
+        <circle cx="900" cy="350" r="3" fill="#000"/>
+        
+        <!-- Current Arrow (Downward along curve) -->
+        <path d="M 932,210 Q 938,247 932,290" stroke="#8e44ad" stroke-width="4" fill="none" marker-end="url(#arr-purp)"/>
+        <text x="948" y="255" font-family="serif" font-style="italic" font-size="24" font-weight="bold" fill="#8e44ad">I</text>
+
+        <!-- Labels -->
+        <text x="140" y="420" font-family="sans-serif" font-size="22" font-weight="bold" fill="#bdc3c7">a</text>
+        <text x="400" y="420" font-family="sans-serif" font-size="22" font-weight="bold" fill="#bdc3c7">b</text>
+        <text x="650" y="420" font-family="sans-serif" font-size="22" font-weight="bold" fill="#bdc3c7">c</text>
+        <text x="900" y="420" font-family="sans-serif" font-size="22" font-weight="bold" fill="#bdc3c7">d</text>
+        
+        <!-- Connecting line at bottom -->
+        <line x1="50" y1="412" x2="950" y2="412" stroke="#ecf0f1" stroke-width="4"/>
+    </svg>
+</div>`;
+            }
+            eqHTML += `<div class="equation-section-title" style="grid-column: 1 / -1; margin-top: 2rem; margin-bottom: 0.5rem; border-bottom: 2px solid var(--cyan); padding-bottom: 0.5rem;"><h2 style="color: var(--primary-blue); font-size: 1.5rem;"><i class="fa-solid fa-layer-group"></i> ${currentSection}</h2>${sectionGraphic}</div>`;
         }
         
         eqHTML += `
@@ -679,5 +1581,130 @@ window.addEventListener('scroll', () => {
         const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
         const scrolled = (winScroll / height) * 100;
         document.getElementById('reading-progress').style.width = height <= 0 ? "100%" : scrolled + "%";
+    }
+});
+
+// --- AI Tutor Logic ---
+const aiWidget = document.getElementById('ai-widget-container');
+const aiToggleBtn = document.getElementById('ai-toggle-btn');
+const aiCloseBtn = document.getElementById('ai-close-btn');
+const aiMessages = document.getElementById('ai-messages');
+const aiApiKeyInput = document.getElementById('ai-api-key-input');
+const aiSaveKeyBtn = document.getElementById('ai-save-key-btn');
+const aiKeySetup = document.getElementById('ai-api-key-setup');
+const aiInputArea = document.getElementById('ai-input-area');
+const aiUserInput = document.getElementById('ai-user-input');
+const aiSendBtn = document.getElementById('ai-send-btn');
+
+let geminiApiKey = localStorage.getItem('gemini_api_key') || '';
+
+if (geminiApiKey) {
+    aiKeySetup.style.display = 'none';
+    aiInputArea.style.display = 'flex';
+}
+
+aiToggleBtn.addEventListener('click', () => {
+    aiWidget.classList.remove('ai-widget-collapsed');
+});
+
+aiCloseBtn.addEventListener('click', () => {
+    aiWidget.classList.add('ai-widget-collapsed');
+});
+
+aiSaveKeyBtn.addEventListener('click', () => {
+    const key = aiApiKeyInput.value.trim();
+    if (key) {
+        geminiApiKey = key;
+        localStorage.setItem('gemini_api_key', key);
+        aiKeySetup.style.display = 'none';
+        aiInputArea.style.display = 'flex';
+        aiApiKeyInput.value = '';
+    }
+});
+
+function addAiMessage(text, isUser = false) {
+    const msgDiv = document.createElement('div');
+    msgDiv.className = `ai-msg ${isUser ? 'user' : 'ai'}`;
+    
+    // Basic markdown parsing for bold and code
+    let formattedText = text
+        .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+        .replace(/`(.*?)`/g, '<code>$1</code>')
+        .replace(/\n/g, '<br>');
+    
+    msgDiv.innerHTML = formattedText;
+    aiMessages.appendChild(msgDiv);
+    aiMessages.scrollTop = aiMessages.scrollHeight;
+}
+
+async function sendToGemini(message) {
+    if (!geminiApiKey) return;
+    
+    let sysInstruct = "You are a helpful, encouraging physics tutor. The user is currently on a physics learning website.";
+    if (typeof currentLesson !== 'undefined' && currentLesson) {
+        sysInstruct += ` They are currently studying the lesson "${currentLesson.title}".`;
+    }
+    
+    addAiMessage(message, true);
+    aiUserInput.value = '';
+    aiUserInput.disabled = true;
+    aiSendBtn.disabled = true;
+    
+    const loadingDiv = document.createElement('div');
+    loadingDiv.className = 'ai-msg ai';
+    loadingDiv.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Thinking...';
+    aiMessages.appendChild(loadingDiv);
+    aiMessages.scrollTop = aiMessages.scrollHeight;
+
+    try {
+        const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${geminiApiKey}`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                systemInstruction: { parts: [{ text: sysInstruct }] },
+                contents: [{ parts: [{ text: message }] }]
+            })
+        });
+
+        const data = await response.json();
+        aiMessages.removeChild(loadingDiv);
+
+        if (data.error) {
+            addAiMessage("Error: " + data.error.message);
+            // If API key is invalid, prompt again
+            if (data.error.code === 400 || data.error.code === 403) {
+                localStorage.removeItem('gemini_api_key');
+                geminiApiKey = '';
+                aiKeySetup.style.display = 'block';
+                aiInputArea.style.display = 'none';
+            }
+        } else if (data.candidates && data.candidates.length > 0) {
+            const reply = data.candidates[0].content.parts[0].text;
+            addAiMessage(reply, false);
+        } else {
+            addAiMessage("Sorry, I didn't get a response.");
+        }
+    } catch (error) {
+        aiMessages.removeChild(loadingDiv);
+        addAiMessage("Failed to connect to AI server. Check your network.");
+    } finally {
+        aiUserInput.disabled = false;
+        aiSendBtn.disabled = false;
+        aiUserInput.focus();
+        if (window.MathJax) MathJax.typesetPromise();
+    }
+}
+
+aiSendBtn.addEventListener('click', () => {
+    const text = aiUserInput.value.trim();
+    if (text) sendToGemini(text);
+});
+
+aiUserInput.addEventListener('keypress', (e) => {
+    if (e.key === 'Enter') {
+        const text = aiUserInput.value.trim();
+        if (text) sendToGemini(text);
     }
 });
