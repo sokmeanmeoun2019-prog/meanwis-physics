@@ -194,6 +194,7 @@ button {
     box-shadow: var(--shadow-md);
     transition: var(--transition);
     border-top: 4px solid var(--cyan);
+    cursor: pointer;
 }
 
 .grade-card:nth-child(2) {
