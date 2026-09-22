@@ -1076,11 +1076,11 @@ function loadLessonDetail(lesson) {
         <text x="40" y="210" font-family="serif" font-size="26" font-style="italic" fill="#333">n<tspan font-style="normal" font-size="18" dy="5">2</tspan></text>
         
         <!-- Angle i -->
-        <path d="M 200,120 A 55 55 0 0 1 164,133" fill="none" stroke="#000" stroke-width="1.5"/>
+        <path d="M 200,120 A 55 55 0 0 0 164,133" fill="none" stroke="#000" stroke-width="1.5"/>
         <text x="180" y="115" font-family="serif" font-size="22" font-style="italic" fill="#000">i</text>
         
         <!-- Angle r -->
-        <path d="M 200,250 A 75 75 0 0 1 230,244" fill="none" stroke="#000" stroke-width="1.5"/>
+        <path d="M 200,250 A 75 75 0 0 0 230,244" fill="none" stroke="#000" stroke-width="1.5"/>
         <text x="212" y="265" font-family="serif" font-size="22" font-style="italic" fill="#000">r</text>
     </svg>
 </div>`;
