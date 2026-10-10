@@ -52,7 +52,7 @@ equations:[
 {section:"Inclined Plane",name:"If no friction",formula:"\\( W_E = W_R \\Leftrightarrow F_E L = F_R h \\)",symbols:[{symbol:"W_E",desc:"Work by Effort (J)"},{symbol:"W_R",desc:"Work on Load (J)"},{symbol:"F_E",desc:"Effort Force (N)"},{symbol:"F_R",desc:"Load Force (N)"},{symbol:"L",desc:"Length of incline (m)"},{symbol:"h",desc:"Height of incline (m)"}]},
 {section:"Pulley",name:"Pulley Mechanical advantage",formula:"\\( MA = \\frac{F_R}{F_E} = \\text{# of cables} \\)",symbols:[{symbol:"MA",desc:"Mechanical Advantage (No unit)"}]},
 {section:"Pulley",name:"Pulley Velocity Ratio",formula:"\\( VR = \\frac{d_E}{d_R} \\)",symbols:[{symbol:"d_E",desc:"Distance moved by effort (m)"},{symbol:"d_R",desc:"Distance moved by load (m)"}]},
-{section:"Gears System",name:"Gears System Mechanical advantage",formula:"\\( MA = \\frac{F_R}{F_E} = \\frac{N_R}{N_E} = \\frac{r_R}{r_E} = \\frac{d_R}{d_E} \\)",symbols:[{symbol:"N_R, N_E",desc:"Number of teeth"},{symbol:"r_R, r_E",desc:"Radii (m)"},{symbol:"d_R, d_E",desc:"Diameters (m)"}]},
+{section:"Gears System",name:"Gears System Mechanical advantage",formula:"\\[ \\begin{aligned} MA &= \\frac{F_R}{F_E} = \\frac{N_R}{N_E} \\\\ &= \\frac{r_R}{r_E} = \\frac{d_R}{d_E} \\end{aligned} \\]",symbols:[{symbol:"N_R, N_E",desc:"Number of teeth"},{symbol:"r_R, r_E",desc:"Radii (m)"},{symbol:"d_R, d_E",desc:"Diameters (m)"}]},
 {section:"Gears System",name:"Gear Ratio (GR)",formula:"\\( GR = \\frac{N_R}{N_E} = \\frac{d_R}{d_E} \\)",symbols:[{symbol:"GR",desc:"Gear Ratio (No unit)"}]},
 {section:"Gears System",name:"Relation of turns-teeth",formula:"\\( N_E t_E = N_R t_R \\Leftrightarrow \\frac{N_E}{N_R} = \\frac{t_R}{t_E} \\)",symbols:[{symbol:"N",desc:"Number of turns (rev)"},{symbol:"t",desc:"Number of teeth"}]},
 {section:"Belt System",name:"Belt System Mechanical advantage",formula:"\\( MA = \\frac{F_R}{F_E} = \\frac{R_R}{R_E} \\)",symbols:[{symbol:"R_R, R_E",desc:"Radii of pulleys (m)"}]},
@@ -87,7 +87,7 @@ equations:[
 equations:[
 {section:"Electrical Power",name:"Definition of power",formula:"\\( P = \\frac{W}{t} = \\frac{E}{t} \\)",symbols:[{symbol:"P",desc:"Power (W)"},{symbol:"W",desc:"Work (J)"},{symbol:"E",desc:"Energy (J)"},{symbol:"t",desc:"Time (s)"}]},
 {section:"Electrical Power",name:"Power of current",formula:"\\( P = VI = RI^2 = \\frac{V^2}{R} \\)",symbols:[{symbol:"P",desc:"Power (W)"},{symbol:"V",desc:"Voltage (V)"},{symbol:"I",desc:"Current (A)"},{symbol:"R",desc:"Resistance (Ω)"}]},
-{section:"Electrical Power",name:"Energy Transfer",formula:"\\( E = QV = VIt = RI^2 t = \\frac{V^2}{R} t \\)",symbols:[{symbol:"E",desc:"Energy (J)"},{symbol:"Q",desc:"Charge (C)"},{symbol:"V",desc:"Voltage (V)"},{symbol:"I",desc:"Current (A)"},{symbol:"R",desc:"Resistance (Ω)"},{symbol:"t",desc:"Time (s)"}]},
+{section:"Electrical Power",name:"Energy Transfer",formula:"\\[ \\begin{aligned} E &= QV = VIt \\\\ &= RI^2 t = \\frac{V^2}{R} t \\end{aligned} \\]",symbols:[{symbol:"E",desc:"Energy (J)"},{symbol:"Q",desc:"Charge (C)"},{symbol:"V",desc:"Voltage (V)"},{symbol:"I",desc:"Current (A)"},{symbol:"R",desc:"Resistance (Ω)"},{symbol:"t",desc:"Time (s)"}]},
 {section:"Electrical Power",name:"Cost of using electricity",formula:"\\( \\text{cost} = E(\\text{kWh}) \\times \\text{price/1kWh} \\)",symbols:[{symbol:"E",desc:"Energy (kWh)"},{symbol:"price",desc:"Cost per kWh (Currency)"}]},
 {section:"Heat Energy",name:"Heat gained or lost",formula:"\\( Q = mc\\Delta T \\)",symbols:[{symbol:"Q",desc:"Heat Energy (J)"},{symbol:"m",desc:"Mass (kg)"},{symbol:"c",desc:"Specific heat capacity (J/kg·K)"},{symbol:"ΔT",desc:"Change in temp (K or °C)"}]},
 {section:"Heat Energy",name:"Specific heat capacity",formula:"\\( c = \\frac{Q}{m\\Delta T} \\)",symbols:[{symbol:"c",desc:"Specific heat capacity (J/kg·K)"},{symbol:"Q",desc:"Heat Energy (J)"},{symbol:"m",desc:"Mass (kg)"},{symbol:"ΔT",desc:"Change in temp (K or °C)"}]},
@@ -196,8 +196,8 @@ equations:[
 {section:"Ideal Gas Laws",name:"Isochoric process",formula:"\\( \\frac{P_1}{T_1} = \\frac{P_2}{T_2} \\)",symbols:[{symbol:"P_1, P_2",desc:"Initial/Final Pressure (Pa)"},{symbol:"T_1, T_2",desc:"Initial/Final Temperature (K)"}]},
 {section:"Ideal Gas Laws",name:"Isothermal process",formula:"\\( P_1 V_1 = P_2 V_2 \\)",symbols:[{symbol:"P_1, P_2",desc:"Initial/Final Pressure (Pa)"},{symbol:"V_1, V_2",desc:"Initial/Final Volume (m³)"}]},
 {section:"Kinetic Energy & Speed",name:"Average kinetic Energy",formula:"\\( K_{av} = \\frac{1}{2}m_0(v^2)_{av} = \\frac{3}{2} \\frac{PV}{N} = \\frac{3}{2} k_B T \\)",symbols:[{symbol:"(v^2)_{av}",desc:"Average of velocity squared (m²/s²)"}]},
-{section:"Kinetic Energy & Speed",name:"Total average kinetic Energy",formula:"\\( K = N K_{av} = \\frac{3}{2} N k_B T = \\frac{3}{2} nRT = \\frac{3}{2} PV \\)",symbols:[{symbol:"K",desc:"Total Kinetic Energy (J)"}]},
-{section:"Kinetic Energy & Speed",name:"Root-mean-square speed",formula:"\\( v_{rms} = \\sqrt{(v^2)_{av}} = \\sqrt{\\frac{3 k_B T}{m_0}} = \\sqrt{\\frac{3RT}{M}} = \\sqrt{\\frac{3P}{\\rho}} \\)",symbols:[{symbol:"v_{rms}",desc:"Root-mean-square speed (m/s)"},{symbol:"M",desc:"Molar Mass (kg/mol)"},{symbol:"ρ",desc:"Density (kg/m³)"}]},
+{section:"Kinetic Energy & Speed",name:"Total average kinetic Energy",formula:"\\[ \\begin{aligned} K &= N K_{av} = \\frac{3}{2} N k_B T \\\\ &= \\frac{3}{2} nRT = \\frac{3}{2} PV \\end{aligned} \\]",symbols:[{symbol:"K",desc:"Total Kinetic Energy (J)"}]},
+{section:"Kinetic Energy & Speed",name:"Root-mean-square speed",formula:"\\[ \\begin{aligned} v_{rms} &= \\sqrt{(v^2)_{av}} = \\sqrt{\\frac{3 k_B T}{m_0}} \\\\ &= \\sqrt{\\frac{3RT}{M}} = \\sqrt{\\frac{3P}{\\rho}} \\end{aligned} \\]",symbols:[{symbol:"v_{rms}",desc:"Root-mean-square speed (m/s)"},{symbol:"M",desc:"Molar Mass (kg/mol)"},{symbol:"ρ",desc:"Density (kg/m³)"}]},
 {section:"Fundamental Relations",name:"Number of moles",formula:"\\( n = \\frac{m}{M} = \\frac{N}{N_A} \\)",symbols:[{symbol:"m",desc:"Total mass (kg)"},{symbol:"N_A",desc:"Avogadro's Number (6.02×10²³ mol⁻¹)"}]},
 {section:"Fundamental Relations",name:"Object’s mass",formula:"\\( m = n M = m_0 N \\)",symbols:[{symbol:"m",desc:"Total mass (kg)"},{symbol:"n",desc:"Number of moles (mol)"},{symbol:"M",desc:"Molar Mass (kg/mol)"},{symbol:"m_0",desc:"Mass of one molecule (kg)"},{symbol:"N",desc:"Number of molecules"}]},
 {section:"Fundamental Relations",name:"Molar Mass",formula:"\\( M = m_0 N_A = \\frac{m}{n} \\)",symbols:[{symbol:"M",desc:"Molar Mass (kg/mol)"},{symbol:"m_0",desc:"Mass of one molecule (kg)"},{symbol:"N_A",desc:"Avogadro's Number (6.02×10²³ mol⁻¹)"},{symbol:"m",desc:"Total mass (kg)"},{symbol:"n",desc:"Number of moles (mol)"}]},
@@ -320,6 +320,43 @@ equations:[
 {question:"The period \\( T \\) of a wave is related to angular frequency by:", options:["\\( T = \\frac{2\\pi}{\\omega} \\)","\\( T = 2\\pi \\omega \\)","\\( T = \\frac{\\omega}{2\\pi} \\)","\\( T = \\omega \\lambda \\)"], correctIndex:0, feedback:"By definition, \\( \\omega = 2\\pi/T \\Rightarrow T = 2\\pi/\\omega \\)."},
 {question:"A standing wave is usually formed by the superposition of:", options:["Two waves of different frequencies","Two waves of same frequency traveling in same direction","Two waves of same frequency traveling in opposite directions","A single wave reflecting internally"], correctIndex:2, feedback:"Standing waves form from identical waves moving in opposite directions."}
 ]},
+{id:"g12-interf",gifUrl:"https://commons.wikimedia.org/wiki/Special:FilePath/Two_sources_interference.gif",title:"Lesson 2: Interference and Diffraction",concepts:["Interference: A phenomenon where two or more waves overlap, modifying the resulting wave pattern.","Constructive Interference: Occurs when waves are in phase, increasing amplitude.","Destructive Interference: Occurs when waves are out of phase, decreasing amplitude.","Coherent Sources: Sources producing waves of the same amplitude, frequency, and constant phase difference.","Young's Double-Slit Experiment: Demonstrates the wave nature of light through interference patterns.","Diffraction: Bending and spreading of waves when they encounter an obstacle or pass through a narrow aperture."],definitions:[],examples:[],
+equations:[
+{section:"Interference",name:"Constructive interference condition",formula:"\\( d_2 - d_1 = n\\lambda \\)",symbols:[{symbol:"d_2, d_1",desc:"Distances from sources (m)"},{symbol:"λ",desc:"Wavelength (m)"},{symbol:"n",desc:"Integer (0, 1, 2...)"}]},
+{section:"Interference",name:"Destructive interference condition",formula:"\\( d_2 - d_1 = (2n + 1)\\frac{\\lambda}{2} \\)",symbols:[{symbol:"n",desc:"Integer (0, 1, 2...)"}]},
+{section:"Interference",name:"Wave function superposition",formula:"\\( y = A\\sin(\\omega t - kd_1) + A\\sin(\\omega t - kd_2) \\)",symbols:[{symbol:"y",desc:"Superposition wave equation"}]},
+{section:"Interference",name:"Maximum amplitude",formula:"\\( A' = 2A\\cos\\left(\\pi \\frac{d_2 - d_1}{\\lambda}\\right) \\)",symbols:[{symbol:"A'",desc:"Superposition maximum amplitude (m)"}]},
+{section:"Interference of Light Waves",name:"Path difference (Double Slit)",formula:"\\( r_2 - r_1 = d\\sin\\theta \\)",symbols:[{symbol:"d",desc:"Distance between slits (m)"},{symbol:"θ",desc:"Angle (° or rad)"}]},
+{section:"Interference of Light Waves",name:"Condition for Bright Fringes",formula:"\\( d\\sin\\theta_{bright} = m\\lambda \\)",symbols:[{symbol:"m",desc:"Integer (0, ±1, ±2...)"}]},
+{section:"Interference of Light Waves",name:"Condition for Dark Fringes",formula:"\\( d\\sin\\theta_{Dark} = \\left(m + \\frac{1}{2}\\right)\\lambda \\)",symbols:[{symbol:"m",desc:"Integer (0, ±1, ±2...)"}]},
+{section:"Interference of Light Waves",name:"Distance of fringe on screen",formula:"\\( y = L\\tan\\theta \\)",symbols:[{symbol:"y",desc:"Distance on screen (m)"},{symbol:"L",desc:"Distance to screen (m)"}]},
+{section:"Interference of Light Waves",name:"Position of Bright fringes",formula:"\\( y_{bright} = L\\frac{m\\lambda}{d} \\)",symbols:[{symbol:"y_{bright}",desc:"Position of bright fringes (m)"}]},
+{section:"Interference of Light Waves",name:"Position of Dark fringes",formula:"\\( y_{Dark} = L\\frac{(m + 1/2)\\lambda}{d} \\)",symbols:[{symbol:"y_{Dark}",desc:"Position of dark fringes (m)"}]},
+{section:"Diffraction",name:"Condition for Minima (Dark Fringes)",formula:"\\( a\\sin\\theta = m\\lambda \\)",symbols:[{symbol:"a",desc:"Width of the slit (m)"},{symbol:"m",desc:"Order of minimum fringe (±1, ±2...)"}]},
+{section:"Diffraction",name:"Position of Dark fringe",formula:"\\( y = L\\frac{m\\lambda}{a} \\)",symbols:[{symbol:"y",desc:"Position of dark fringe on screen (m)"}]}
+],flashcards:[
+{front:"What is the condition for constructive interference (path difference)?", back:"\\( d_2 - d_1 = n\\lambda \\)"},
+{front:"What is the condition for destructive interference (path difference)?", back:"\\( d_2 - d_1 = (2n + 1)\\frac{\\lambda}{2} \\)"},
+{front:"What is the maximum amplitude of a superposition wave?", back:"\\( A' = 2A\\cos\\left(\\pi \\frac{d_2 - d_1}{\\lambda}\\right) \\)"},
+{front:"What is the path difference formula in Young's Double-Slit Experiment?", back:"\\( r_2 - r_1 = d\\sin\\theta \\)"},
+{front:"What is the condition for Bright Fringes (Constructive Interference) in a double-slit?", back:"\\( d\\sin\\theta = m\\lambda \\)"},
+{front:"What is the condition for Dark Fringes (Destructive Interference) in a double-slit?", back:"\\( d\\sin\\theta = \\left(m + \\frac{1}{2}\\right)\\lambda \\)"},
+{front:"How do you calculate the position of bright fringes on the screen?", back:"\\( y_{bright} = L\\frac{m\\lambda}{d} \\)"},
+{front:"How do you calculate the position of dark fringes on the screen?", back:"\\( y_{Dark} = L\\frac{(m + 1/2)\\lambda}{d} \\)"},
+{front:"What is the condition for Minima (Dark Fringes) in single-slit diffraction?", back:"\\( a\\sin\\theta = m\\lambda \\)"},
+{front:"How do you calculate the position of the dark fringe on the screen in diffraction?", back:"\\( y = L\\frac{m\\lambda}{a} \\)"}
+],quiz:[
+{question:"Which condition represents constructive interference in terms of path difference?", options:["\\( d_2 - d_1 = n\\lambda \\)","\\( d_2 - d_1 = (2n + 1)\\lambda/2 \\)","\\( d_2 - d_1 = \\lambda/4 \\)","\\( d_2 - d_1 = 0 \\)"], correctIndex:0, feedback:"Constructive interference occurs when the path difference is an integer multiple of the wavelength."},
+{question:"In Young's Double-Slit Experiment, what does \\( d \\) represent?", options:["Distance to the screen","Distance between the two slits","Width of a single slit","Position of the fringe"], correctIndex:1, feedback:"\\( d \\) is the distance between the two coherent sources (slits)."},
+{question:"The position of bright fringes on a screen is given by:", options:["\\( y = L\\frac{m\\lambda}{a} \\)","\\( y = L\\tan\\theta_{Dark} \\)","\\( y = L\\frac{m\\lambda}{d} \\)","\\( y = \\frac{m\\lambda}{Ld} \\)"], correctIndex:2, feedback:"For bright fringes, \\( y_{bright} = L\\frac{m\\lambda}{d} \\)."},
+{question:"What is diffraction?", options:["Waves bouncing off a surface","Waves changing speed in a new medium","Waves bending around an obstacle or spreading through an opening","Two waves canceling each other out"], correctIndex:2, feedback:"Diffraction is the bending and spreading of waves around edges or through apertures."},
+{question:"In the single-slit diffraction formula \\( a\\sin\\theta = m\\lambda \\), what does \\( a \\) stand for?", options:["Amplitude","Acceleration","Distance to screen","Width of the slit"], correctIndex:3, feedback:"In diffraction, \\( a \\) represents the width of the aperture or slit."},
+{question:"What type of sources are required for a stable interference pattern?", options:["Incoherent sources","Coherent sources","High-frequency sources","Long-wavelength sources"], correctIndex:1, feedback:"Coherent sources, which have the same amplitude, frequency, and a constant phase difference, are required."},
+{question:"The condition for Dark Fringes in Young's Double-Slit Experiment is:", options:["\\( d\\sin\\theta = m\\lambda \\)","\\( d\\sin\\theta = (m + 1/2)\\lambda \\)","\\( a\\sin\\theta = m\\lambda \\)","\\( r_2 - r_1 = n\\lambda \\)"], correctIndex:1, feedback:"Dark fringes (destructive interference) occur at half-integer multiples of the wavelength: \\( d\\sin\\theta = (m + 1/2)\\lambda \\)."},
+{question:"For small angles, which approximation is used to find the fringe position?", options:["\\( \\sin\\theta \\approx \\cos\\theta \\)","\\( \\cos\\theta \\approx \\tan\\theta \\)","\\( \\tan\\theta \\approx \\sin\\theta \\)","\\( \\sin\\theta \\approx 1 \\)"], correctIndex:2, feedback:"For small angles measured in radians, \\( \\tan\\theta \\approx \\sin\\theta \\approx \\theta \\)."},
+{question:"When \\( m = 0 \\) in \\( d\\sin\\theta = m\\lambda \\), this corresponds to:", options:["The first dark fringe","The central maximum (bright fringe)","No interference","The minimum amplitude"], correctIndex:1, feedback:"\\( m = 0 \\) gives the zero maximum fringe, or central maximum."},
+{question:"What is the maximum amplitude \\( A' \\) of the superposition of two waves with amplitude \\( A \\)?", options:["\\( A \\)","\\( A/2 \\)","\\( 2A \\)","\\( 4A \\)"], correctIndex:2, feedback:"Constructive interference doubles the amplitude, giving a maximum of \\( 2A \\)."}
+]},
 {id:"g12-l5",gifUrl:"https://commons.wikimedia.org/wiki/Special:FilePath/Electric-generator-animation.gif",title:"Lesson 5: Magnetism & Induction",concepts:[],definitions:[],examples:[],
 equations:[
 {section:"Magnetic Field & Force",name:"Magnetic field (straight wire)",formula:"\\( B = \\frac{\\mu_0 I}{2\\pi d} \\)",symbols:[{symbol:"B",desc:"Magnetic Field (T)"},{symbol:"μ_0",desc:"Permeability of free space (4π×10⁻⁷ T·m/A)"},{symbol:"I",desc:"Current (A)"},{symbol:"d",desc:"Distance from wire (m)"}]},
@@ -419,8 +456,8 @@ const backToLessonsBtn = document.getElementById('back-to-lessons-btn');
 
 // --- Navigation ---
 function showView(viewElement) {
-    document.querySelectorAll('.view').forEach(el => el.classList.remove('active', 'hidden'));
-    document.querySelectorAll('.view').forEach(el => {
+    Array.from(document.querySelectorAll('.view')).forEach(el => el.classList.remove('active', 'hidden'));
+    Array.from(document.querySelectorAll('.view')).forEach(el => {
         if(el !== viewElement) el.classList.add('hidden');
     });
     viewElement.classList.add('active');
@@ -431,7 +468,7 @@ homeBtn.addEventListener('click', () => showView(viewDashboard));
 backToLessonsBtn.addEventListener('click', () => showView(viewLessons));
 
 // --- Grade Selection ---
-document.querySelectorAll('.grade-card').forEach(card => {
+Array.from(document.querySelectorAll('.grade-card')).forEach(card => {
     card.addEventListener('click', () => loadLessons(card.getAttribute('data-grade')));
 });
 
@@ -1459,10 +1496,10 @@ function loadLessonDetail(lesson) {
 }
 
 // --- Tabs Logic ---
-document.querySelectorAll('.tab-btn').forEach(btn => {
+Array.from(document.querySelectorAll('.tab-btn')).forEach(btn => {
     btn.addEventListener('click', () => {
-        document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-        document.querySelectorAll('.tab-pane').forEach(p => {
+        Array.from(document.querySelectorAll('.tab-btn')).forEach(b => b.classList.remove('active'));
+        Array.from(document.querySelectorAll('.tab-pane')).forEach(p => {
             p.classList.add('hidden');
             p.classList.remove('active');
         });
