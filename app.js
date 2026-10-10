@@ -184,7 +184,7 @@ equations:[
 ]}
 ],
 "12": [
-{id:"g12-l1",gifUrl:"https://commons.wikimedia.org/wiki/Special:FilePath/Translational_motion.gif",title:"Lesson 1: Kinetic Theory of Ideal Gases",concepts:[],definitions:[],examples:[],
+{id:"g12-l1",gifUrl:"https://commons.wikimedia.org/wiki/Special:FilePath/Translational_motion.gif",title:"Chapter 1 Lesson 1: Kinetic Theory of Ideal Gases",concepts:[],definitions:[],examples:[],
 equations:[
 {section:"Pressure",name:"Pressure in Kinetic Theory",formula:"\\( P = \\left(\\frac{2}{3}\\right)\\left(\\frac{N}{V}\\right)K_{av} \\)",symbols:[{symbol:"P",desc:"Pressure (Pa)"},{symbol:"N",desc:"Number of molecules"},{symbol:"V",desc:"Volume (m³)"},{symbol:"K_{av}",desc:"Average Kinetic Energy (J)"}]},
 {section:"Pressure",name:"Pressure exerted on container walls",formula:"\\( P = \\frac{F}{A}, F = \\frac{\\Delta p}{\\Delta t}, \\Delta p = N m_0 \\Delta v \\)",symbols:[{symbol:"F",desc:"Force (N)"},{symbol:"A",desc:"Area (m²)"},{symbol:"Δp",desc:"Change in momentum (kg·m/s)"},{symbol:"Δt",desc:"Time interval (s)"}]},
@@ -226,7 +226,7 @@ equations:[
 {question:"Which equation represents the Combined Gas Law?", options:["\\( PV = nRT \\)","\\( \\frac{P_1 V_1}{T_1} = \\frac{P_2 V_2}{T_2} \\)","\\( P_1 T_1 = P_2 T_2 \\)","\\( V_1 / P_1 = V_2 / P_2 \\)"], correctIndex:1, feedback:"The Combined Gas Law is \\( \\frac{P_1 V_1}{T_1} = \\frac{P_2 V_2}{T_2} \\)."},
 {question:"Total kinetic energy \\( K \\) of \\( N \\) molecules is given by:", options:["\\( \\frac{3}{2} N k_B T \\)","\\( \\frac{1}{2} N k_B T \\)","\\( N m_0 v^2 \\)","\\( P V^2 \\)"], correctIndex:0, feedback:"Total kinetic energy is the average energy per molecule multiplied by \\( N \\): \\( \\frac{3}{2} N k_B T \\)."}
 ]},
-{id:"g12-l2",gifUrl:"https://commons.wikimedia.org/wiki/Special:FilePath/Boyles_Law_animated.gif",title:"Lesson 2: First Law of Thermodynamic",concepts:[],definitions:[],examples:[],
+{id:"g12-l2",gifUrl:"https://commons.wikimedia.org/wiki/Special:FilePath/Boyles_Law_animated.gif",title:"Chapter 1 Lesson 2: First Law of Thermodynamic",concepts:[],definitions:[],examples:[],
 equations:[
 {section:"Work Done",name:"Isobaric Process Work",formula:"\\( W = P \\Delta V \\)",symbols:[{symbol:"W",desc:"Work Done (J)"},{symbol:"P",desc:"Pressure (Pa)"},{symbol:"ΔV",desc:"Change in Volume (m³)"}]},
 {section:"Work Done",name:"Linearly Process Work",formula:"\\( W = P_{av} \\Delta V \\)",symbols:[{symbol:"P_{av}",desc:"Average Pressure (Pa)"}]},
@@ -260,7 +260,7 @@ equations:[
 {question:"The internal energy \\( U \\) of an ideal gas is directly proportional to:", options:["Pressure","Volume","Temperature","Density"], correctIndex:2, feedback:"\\( U = \\frac{3}{2} nRT \\), making it directly proportional to absolute temperature."},
 {question:"If a gas expands such that its pressure changes linearly with volume, the work done is:", options:["\\( W = 0 \\)","\\( W = P \\Delta V \\)","\\( W = P_{av} \\Delta V \\)","\\( W = nRT \\)"], correctIndex:2, feedback:"You can use the average pressure for a linear process: \\( W = P_{av} \\Delta V \\)."}
 ]},
-{id:"g12-l3",gifUrl:"https://commons.wikimedia.org/wiki/Special:FilePath/Carnot_cycle.gif",title:"Lesson 3: Heat Engine",concepts:[],definitions:[],examples:[],
+{id:"g12-l3",gifUrl:"https://commons.wikimedia.org/wiki/Special:FilePath/Carnot_cycle.gif",title:"Chapter 1 Lesson 3: Heat Engine",concepts:[],definitions:[],examples:[],
 equations:[
 {section:"Heat Engine",name:"Conservation of energy (Engine)",formula:"\\( Q_h = W_M + Q_c \\)",symbols:[{symbol:"Q_h",desc:"Heat from hot reservoir (J)"},{symbol:"W_M",desc:"Mechanical Work Done (J)"},{symbol:"Q_c",desc:"Heat rejected to cold reservoir (J)"}]},
 {section:"Heat Engine",name:"Ratio",formula:"\\( \\frac{Q_c}{Q_h} = \\frac{T_c}{T_h} \\)",symbols:[{symbol:"T_c",desc:"Cold reservoir temp (K)"},{symbol:"T_h",desc:"Hot reservoir temp (K)"}]},
@@ -289,7 +289,7 @@ equations:[
 {question:"Why is a Carnot engine's efficiency always less than 100%?", options:["Because \\( T_h \\) is finite","Because \\( T_c \\) is always greater than 0 K","Because friction exists","Because \\( Q_c \\) is zero"], correctIndex:1, feedback:"Reaching 100% would require \\( T_c = 0\\text{K} \\), which violates the third law of thermodynamics."},
 {question:"If an engine absorbs 1000J of heat from the hot reservoir and does 400J of work, how much heat is rejected?", options:["400J","600J","1000J","1400J"], correctIndex:1, feedback:"Using \\( Q_h = W_M + Q_c \\), we find \\( 1000 = 400 + Q_c \\Rightarrow Q_c = 600\\text{J} \\)."}
 ]},
-{id:"g12-l4",gifUrl:"https://commons.wikimedia.org/wiki/Special:FilePath/Standing_wave_2.gif",title:"Lesson 4: Superposition and Waves",concepts:[],definitions:[],examples:[],
+{id:"g12-l4",gifUrl:"https://commons.wikimedia.org/wiki/Special:FilePath/Standing_wave_2.gif",title:"Chapter 2 Lesson 1: Superposition and Waves",concepts:[],definitions:[],examples:[],
 equations:[
 {section:"Sinusoidal Wave",name:"Sinusoidal Wave equation",formula:"\\( y = a \\sin(\\omega t \\pm kx) \\)",symbols:[{symbol:"y",desc:"Displacement (m)"},{symbol:"a",desc:"Amplitude (m)"},{symbol:"ω",desc:"Angular frequency (rad/s)"},{symbol:"t",desc:"Time (s)"},{symbol:"k",desc:"Wave number (rad/m)"},{symbol:"x",desc:"Position (m)"}]},
 {section:"Sinusoidal Wave",name:"Angular frequency",formula:"\\( \\omega = \\frac{2\\pi}{T}, k = \\frac{2\\pi}{\\lambda} \\)",symbols:[{symbol:"T",desc:"Period (s)"},{symbol:"λ",desc:"Wavelength (m)"}]},
@@ -357,7 +357,7 @@ equations:[
 {question:"When \\( m = 0 \\) in \\( d\\sin\\theta = m\\lambda \\), this corresponds to:", options:["The first dark fringe","The central maximum (bright fringe)","No interference","The minimum amplitude"], correctIndex:1, feedback:"\\( m = 0 \\) gives the zero maximum fringe, or central maximum."},
 {question:"What is the maximum amplitude \\( A' \\) of the superposition of two waves with amplitude \\( A \\)?", options:["\\( A \\)","\\( A/2 \\)","\\( 2A \\)","\\( 4A \\)"], correctIndex:2, feedback:"Constructive interference doubles the amplitude, giving a maximum of \\( 2A \\)."}
 ]},
-{id:"g12-l5",gifUrl:"https://commons.wikimedia.org/wiki/Special:FilePath/Electric-generator-animation.gif",title:"Lesson 5: Magnetism & Induction",concepts:[],definitions:[],examples:[],
+{id:"g12-l5",gifUrl:"https://commons.wikimedia.org/wiki/Special:FilePath/Electric-generator-animation.gif",title:"Chapter 3 Lesson 1: Magnetism & Induction",concepts:[],definitions:[],examples:[],
 equations:[
 {section:"Magnetic Field & Force",name:"Magnetic field (straight wire)",formula:"\\( B = \\frac{\\mu_0 I}{2\\pi d} \\)",symbols:[{symbol:"B",desc:"Magnetic Field (T)"},{symbol:"μ_0",desc:"Permeability of free space (4π×10⁻⁷ T·m/A)"},{symbol:"I",desc:"Current (A)"},{symbol:"d",desc:"Distance from wire (m)"}]},
 {section:"Magnetic Field & Force",name:"Magnetic field (circular wire)",formula:"\\( B = \\frac{\\mu_0 NI}{2R} \\)",symbols:[{symbol:"R",desc:"Radius of coil (m)"},{symbol:"N",desc:"Number of turns"}]},
@@ -402,7 +402,7 @@ equations:[
 {question:"The resonant angular frequency of an LC circuit is:", options:["\\( \\sqrt{CL} \\)","\\( \\frac{1}{CL} \\)","\\( \\frac{1}{\\sqrt{CL}} \\)","\\( \\frac{C}{L} \\)"], correctIndex:2, feedback:"The frequency is given by \\( \\omega_0 = \\frac{1}{\\sqrt{CL}} \\)."},
 {question:"The force between two parallel current-carrying wires depends inversely on:", options:["The length of the wires","The currents \\(I_1\\) and \\(I_2\\)","The permeability \\(\\mu_0\\)","The distance between them \\(a\\)"], correctIndex:3, feedback:"\\( F = \\frac{\\mu_0 I_1 I_2 l}{2\\pi a} \\), so it is inversely proportional to distance \\(a\\)."}
 ]},
-{id:"g12-l6",gifUrl:"https://commons.wikimedia.org/wiki/Special:FilePath/Alternating_current_ani.gif",title:"Lesson 6: Alternating Current",concepts:[],definitions:[],examples:[],
+{id:"g12-l6",gifUrl:"https://commons.wikimedia.org/wiki/Special:FilePath/Alternating_current_ani.gif",title:"Chapter 3 Lesson 2: Alternating Current",concepts:[],definitions:[],examples:[],
 equations:[
 {section:"AC Basics",name:"Instantaneous current",formula:"\\( i = i_m \\sin(\\omega t + \\phi_0) \\)",symbols:[{symbol:"i",desc:"Instantaneous current (A)"},{symbol:"i_m",desc:"Peak current (A)"},{symbol:"\\phi_0",desc:"Initial phase angle (rad)"}]},
 {section:"AC Basics",name:"RMS Current",formula:"\\( I = \\frac{I_m}{\\sqrt{2}} \\)",symbols:[{symbol:"I",desc:"Root Mean Square Current (A)"}]},
